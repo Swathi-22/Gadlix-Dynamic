@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gadlix</title>
+    <!-- favicon -->
+    <link rel=icon href="{% static 'web/img/GADLIX ICON.png' %}" sizes="20x20" type="image/png">
+    <!-- animate -->
+    <link rel="stylesheet" href="{% static 'web/css/animate.css' %}">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="{% static 'web/css/bootstrap.min.css' %}">
+    <!-- magnific popup -->
+    <link rel="stylesheet" href="{% static 'web/css/magnific-popup.css' %}">
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="{% static 'web/css/owl.carousel.min.css' %}">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="{% static 'web/css/font-awesome.min.css' %}">
+    <!-- flaticon -->
+    <link rel="stylesheet" href="{% static 'web/css/flaticon.css' %}">
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="{% static 'web/css/style.css' %}">
+    <!-- responsive Stylesheet -->
+    <link rel="stylesheet" href="{% static 'web/css/responsive.css' %}">
+
+</head>
+
+<body>
+    <div class="body-overlay" id="body-overlay"></div>
+    {% include 'web/partials/header.html'  %}
+    {% block content %}
+    
+    {% endblock %}
+    {% include 'web/partials/footer.html'  %}
+
+
+   <!-- preloader area start -->
+   <div id="preloader">
+    <div id="loader"></div>
+</div>
+<!-- preloader area end -->
+
+<!-- jquery -->
+<script src="{% static 'web/js/jquery-2.2.4.min.js' %}"></script>
+<!-- popper -->
+<script src="{% static 'web/js/popper.min.js' %}"></script>
+<!-- bootstrap -->
+<script src="{% static 'web/js/bootstrap.min.js' %}"></script>
+<!-- magnific popup -->
+<script src="{% static 'web/js/jquery.magnific-popup.js' %}"></script>
+<!-- wow -->
+<script src="{% static 'web/js/wow.min.js' %}"></script>
+<!-- owl carousel -->
+<script src="{% static 'web/js/owl.carousel.min.js' %}"></script>
+<!-- waypoint -->
+<script src="{% static 'web/js/waypoints.min.js' %}"></script>
+<!-- counterup -->
+<script src="{% static 'web/js/jquery.counterup.min.js' %}"></script>
+<!-- imageloaded -->
+<script src="{% static 'web/js/imagesloaded.pkgd.min.js' %}"></script>
+<!-- isotope -->
+<script src="{% static 'web/js/isotope.pkgd.min.js' %}"></script>
+<!-- Progress-Bar -->
+<script src="{% static 'web/js/jQuery.rProgressbar.min.js' %}"></script>
+<!-- Progress-Bar Active js -->
+<script src="{% static 'web/js/active.rProgressbar.js' %}"></script>
+<!-- main js -->
+<script src="{% static 'web/js/main.js' %}"></script>
+
+
+
+</body>
+
+</html>
