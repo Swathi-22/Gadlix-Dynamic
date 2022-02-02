@@ -5,7 +5,7 @@
             <div class="container nav-custom-container">
                 <div class="responsive-mobile-menu">
                     <div class="logo-wrapper">
-                        <a href="index.html" class="logo">
+                        <a href="{% url 'Web:index' %}" class="logo">
     
                             <img class="def" src="{% static 'web/img/GADLIX-WHITE.png' %}" alt="">
                             <img class="alt" src="{% static 'web/img/GADLIX-BLACK.png' %}" alt="">
@@ -22,10 +22,10 @@
                 <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
                     <ul class="nav-custom-menu navbar-nav">
                         <li class="current-menu-item">
-                            <a href="index.html">Home</a>
+                            <a href="{% url 'Web:index' %}">Home</a>
                         </li>
                         <li class="">
-                            <a href="about.html">About</a>
+                            <a href="{% url 'Web:about' %}">About</a>
                             <!--<ul class="sub-menu">
             <li><a href="about.html">About</a></li>
             <li><a href="service-details.html">Service Single</a></li>
@@ -33,10 +33,10 @@
         </ul>-->
                         </li>
                         <li>
-                            <a href="services.html">Services</a>
+                            <a href="{% url 'Web:services' %}">Services</a>
                         </li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="{% url 'Web:gallery' %}">Gallery</a></li>
+                        <li><a href="{% url 'Web:blog' %}">Updates</a></li>
                         <!--<li><a href="blog-details.html">Blog</a></li>-->
                     </ul>
                 </div>
@@ -55,7 +55,7 @@
                         </ul> -->
                     </div>
                     <div class="btn-wrapper">
-                        <a href="contact.html" class="boxed-btn blank">contact us</a>
+                        <a href="{% url 'Web:contact' %}" class="boxed-btn blank">contact us</a>
                     </div>
                 </div>
             </div>
