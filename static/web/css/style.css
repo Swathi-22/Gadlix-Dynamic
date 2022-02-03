@@ -5408,7 +5408,7 @@ Client Area
   top: 25px;
   bottom: 25px;
   padding: 20px 30px;
-  background-color: #50af39;
+  background-color: #50af3959;
   transition: all .3s ease-in;
 }
 
@@ -6806,4 +6806,10 @@ Client Area
 .btn-wrapper .boxed-btn.blank:hover {
   color: #50af39;
 
+}
+.inner-service-section {
+  background-image: url(../img/bg/05.png) !important;
+}
+.head-color{
+  color: white;
 }

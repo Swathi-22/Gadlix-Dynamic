@@ -21,10 +21,10 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bizcoxx_main_menu">
                     <ul class="nav-custom-menu navbar-nav">
-                        <li class="current-menu-item">
+                        <li class="{% if is_index %}current-menu-item{% endif %}">
                             <a href="{% url 'Web:index' %}">Home</a>
                         </li>
-                        <li class="">
+                        <li class="{% if is_about %}current-menu-item{% endif %}">
                             <a href="{% url 'Web:about' %}">About</a>
                             <!--<ul class="sub-menu">
             <li><a href="about.html">About</a></li>
@@ -32,11 +32,11 @@
             <li><a href="contact.html">Contact</a></li>
         </ul>-->
                         </li>
-                        <li>
+                        <li class="{% if is_service %}current-menu-item{% endif %}" >
                             <a href="{% url 'Web:services' %}">Services</a>
                         </li>
-                        <li><a href="{% url 'Web:gallery' %}">Gallery</a></li>
-                        <li><a href="{% url 'Web:blog' %}">Updates</a></li>
+                        <li class="{% if is_gallery %}current-menu-item{% endif %}"><a href="{% url 'Web:gallery' %}">Gallery</a></li>
+                        <li class="{% if is_update %}current-menu-item{% endif %}"><a href="{% url 'Web:blog' %}">Updates</a></li>
                         <!--<li><a href="blog-details.html">Blog</a></li>-->
                     </ul>
                 </div>

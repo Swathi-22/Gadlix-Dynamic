@@ -24,33 +24,35 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="case-studies-masonry-wrapper">
-                        <ul class="case-studies-menu">
+                        <!-- <ul class="case-studies-menu">
                             <li class="active" data-filter="*">All <span>/</span> </li>
                             <li data-filter=".cloud">Billboard <span>/</span> </li>
                             <li data-filter=".data"> Hoarding <span>/</span> </li>
                             <li data-filter=".cyber">Digital Ad <span>/</span> </li>
                             <li data-filter=".cyber">Transport <span>/</span> </li>
                             <li data-filter=".analytics">Shopping </li>
-                        </ul>
+                        </ul> -->
                         <div class="case-studies-masonry row">
+                            {% for gallery in gallery %}
                             <div class="col-lg-3 col-md-4 col-sm-6 masonry-item shofa">
                                 <div class="single-case-studies-item">
                                     <div class="thumb">
-                                        <img src="{% static 'web/img/case-study-two/01.jpg' %}" alt="our work image">
+                                        <img src="{{gallery.image.crop.428x396}}" alt="our work image">
                                         <div class="icon">
-                                            <a class="image-popup" href="{% static 'web/img/case-study-two/01.jpg' %}"><span>+</span></a>
+                                            <a class="image-popup" href="{{gallery.image.url}}"><span>+</span></a>
                                         </div>
                                     </div>
                                     <div class="content">
                                         <a href="#">
-                                            <h3 class="title">City Billboard
+                                            <h3 class="title">{{gallery.title}}
                                             </h3>
                                         </a>
-                                        <p>Billboard</p>
+                                        <!-- <p>Billboard</p> -->
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-md-4 col-sm-6 masonry-item cloud">
+                            {% endfor %}
+                            <!-- <div class="col-lg-3 col-md-4 col-sm-6 masonry-item cloud">
                                 <div class="single-case-studies-item">
                                     <div class="thumb">
                                         <img src="{% static 'web/img/case-study-two/02.jpg' %}" alt="our work image">
@@ -63,7 +65,7 @@
                                             <h3 class="title">Digital Playlist
                                             </h3>
                                         </a>
-                                        <p>Digital Ad</p>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +82,7 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
+                            
                                     </div>
                                 </div>
                             </div>
@@ -97,7 +99,7 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
+                                       
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +116,6 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
                                     </div>
                                 </div>
                             </div>
@@ -131,7 +132,7 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
+                                    
                                     </div>
                                 </div>
                             </div>
@@ -148,7 +149,7 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -165,10 +166,10 @@
                                             <h3 class="title">Mockup World
                                             </h3>
                                         </a>
-                                        <p>Creative Design</p>
+                                    
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -140,7 +140,7 @@
 
 
     <!-- testimonial area start  -->
-    <section class="testimonial-area padding-top-120 padding-bottom-120">
+    <section class="testimonial-area padding-bottom-120 padding-top-120">
         <div class="container">
             <div class="row">
                 <div class="col-xl-7 col-lg-7">
@@ -158,27 +158,30 @@
                 <div class="col-lg-12">
                     <div class="testimonial-carousel-area margin-top-100">
                         <div class="testimonial-carousel">
+                            {% for testimonial in testimonial %}
                             <div class="single-testimonial-item">
                                 <div class="content">
                                     <div class="content-wrapper">
-                                        <p class="description">I found myself working in a true partnership that results in an extra incredible experience of us </p>
+                                        <p class="description">{{testimonial.decription}}</p>
                                     </div>
                                     <div class="author-details">
                                         <div class="thumb">
-                                            <img src="{% static 'web/img/testimonial/01.jpg' %}" alt="testimonial">
+                                            <img src="{{testimonial.image.crop.120x120}}" alt="testimonial">
                                         </div>
                                         <div class="author-meta">
-                                            <h4 class="title">Albert Haris
-                                            </h4>
-                                            <span class="designation">CEO, art media</span>
+                                            <h4 class="title">{{testimonial.name}}</h4>
+                                            <span class="designation">{{testimonial.designation}}</span>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            {% endfor %}
+    
+                            {% comment %}
                             <div class="single-testimonial-item">
                                 <div class="content">
                                     <div class="content-wrapper">
-                                        <p class="description">I found myself working in a true partnership that results in an extra incredible experience of us </p>
+                                        <p class="description">I found myself working in a true partnership that results in an extra incredible experience of us I highly recommend outdooriyan Advertising.</p>
                                     </div>
                                     <div class="author-details">
                                         <div class="thumb">
@@ -192,6 +195,9 @@
                                     </div>
                                 </div>
                             </div>
+                            {% endcomment %}
+    
+    
                         </div>
                     </div>
                 </div>
@@ -202,7 +208,7 @@
 
 
    <!-- Request free quote -->
-    <div class="request-area bg-image" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})">
+    <!-- <div class="request-area bg-image" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})">
         <div class="container">
             <div class="row no-gutters">
                 <div class="col-lg-6">
@@ -313,7 +319,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--=======================
     Client Section
     ========================-->
@@ -321,20 +327,24 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8">
-                    <div class="section-title desktop-center padding-bottom-25">
+                    <div class="section-title desktop-center padding-bottom-50">
                         <h3 class="client-title">
-                            We have more then 20k satified client thoses work with us.
+                            We have more then 20k satified clients those happy work with us.
                         </h3>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-10 offset-md-1">
                     <div class="client-area">
                         <div class="client-active-area">
+                            {% for client in client %}
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/01.png' %}" alt=""></a>
+                                <a href="#"><img src="{{client.image.crop.151x41}}" alt=""></a>
                             </div>
+                            {% endfor%}
+    
+                           {% comment %}
                             <div class="single-brand">
                                 <a href="#"><img src="{% static 'web/img/client/02.png' %}" alt=""></a>
                             </div>
@@ -345,8 +355,11 @@
                                 <a href="#"><img src="{% static 'web/img/client/04.png' %}" alt=""></a>
                             </div>
                             <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/01.png' %}" alt=""></a>
+                                <a href="#"><img src="{% static 'web/img/client/05.png' %}" alt=""></a>
                             </div>
+                            {% endcomment %}
+    
+    
                         </div>
                     </div>
                 </div>
@@ -377,3 +390,5 @@
     <!-- Contact area end -->
 
     {% endblock %}
+
+    

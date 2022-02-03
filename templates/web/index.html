@@ -1,10 +1,10 @@
- {% extends 'web/base.html' %}
- {% load static %}
- {% block content %}
+{% extends 'web/base.html' %}
+{% load static %}
+{% block content %}
 
-   
- <div class="">
-        
+
+<div class="">
+
     <div class="header-area header-bg" style="background-position: center !important;">
         <div class="container">
             <div class="row">
@@ -22,8 +22,8 @@
             </div>
         </div>
     </div>
-   
-   
+
+
 </div>
 <div class="counterup-area padding-bottom-80">
     <div class="container">
@@ -43,7 +43,8 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="counter-content">
-                                <p>We are a value-driven organization. Our core values inspire us to push our boundaries and set benchmarks for others</p>
+                                <p>We are a value-driven organization. Our core values inspire us to push our boundaries
+                                    and set benchmarks for others</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-6">
@@ -93,63 +94,27 @@
             </div>
         </div>
         <div class="row">
+            {% for service in services %}
             <div class="col-lg-4 col-md-6">
                 <div class="single-what-we-service-item margin-bottom-30">
                     <a href="#">
                         <div class="single-what-img">
-                            <img src="{% static 'web/img/service/01.jpg' %}" alt="">
+                            <img src="{{service.image.crop.360x505}}" alt="">
                         </div>
                         <div class="content-wrapper">
-                            <div class="icon">
-                                <i class="flaticon-2-billboard"></i>
-                            </div>
                             <div class="content">
-                                <h4 class="title">Billboard</h4>
-                                <p>Billboard advertising has grown as technology..</p>
+                                <h4 class="title">{{service.title}}</h4>
+                                <p>{{service.description}}</p>
                             </div>
                         </div>
                     </a>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-service-item margin-bottom-30">
-                    <a href="#">
-                        <div class="single-what-img">
-                            <img src="{% static 'web/img/service/02.jpg' %}" alt="">
-                        </div>
-                        <div class="content-wrapper">
-                            <div class="icon">
-                                <i class="flaticon-2-hot-dog"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Mobile Billboard</h4>
-                                <p>Advertising on a truck is a unique strategy to helps..</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6">
-                <div class="single-what-we-service-item margin-bottom-30">
-                    <a href="#">
-                        <div class="single-what-img">
-                            <img src="{% static 'web/img/service/03.jpg' %}" alt="">
-                        </div>
-                        <div class="content-wrapper">
-                            <div class="icon">
-                                <i class="flaticon-2-signboard"></i>
-                            </div>
-                            <div class="content">
-                                <h4 class="title">Digital Displays</h4>
-                                <p>Treacherously far so late have immense condescending.</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
+            {% endfor %}
+
             <div class="col-lg-12">
                 <div class="btn-wrapper desktop-center margin-top-30">
-                    <a href="#" class="boxed-btn blank">explore all services</a>
+                    <a href="{% url 'Web:services' %}" class="boxed-btn blank">explore all services</a>
                 </div>
             </div>
         </div>
@@ -206,9 +171,12 @@
                         <div class="section-title padding-top-40 margin-bottom-55">
                             <h2 class="title">We help to create eye attention.
                             </h2>
-                            <p>We are a value-driven organization. Our core values inspire us to push our boundaries and set benchmarks for others.</p>
+                            <p>We are a value-driven organization. Our core values inspire us to push our boundaries and
+                                set benchmarks for others.</p>
                             <div class="vdo-btn">
-                                <a class="mfp-iframe video-play-btn" href="https://www.youtube.com/watch?v=-ZwQtICNbRc"><span class="video-play"><i class="fas fa-play mfp-iframe"></i></span>Play video</a>
+                                <a class="mfp-iframe video-play-btn"
+                                    href="https://www.youtube.com/watch?v=-ZwQtICNbRc"><span class="video-play"><i
+                                            class="fas fa-play mfp-iframe"></i></span>Play video</a>
                             </div>
                         </div>
                     </div>
@@ -223,7 +191,8 @@
                     </div>
                     <div class="content">
                         <h4 class="title">Multi Format Media</h4>
-                        <p>Billboards capture repeat exposure  business message more effectively than almost any other marketing channel..
+                        <p>Billboards capture repeat exposure business message more effectively than almost any other
+                            marketing channel..
                         </p>
                     </div>
                 </div>
@@ -246,8 +215,9 @@
                         <i class="flaticon-3-checked"></i>
                     </div>
                     <div class="content">
-                            <h4 class="title">Build Brands</h4>
-                        <p>A business is only as good as its strategic process, and that’s what contributes to expectations..
+                        <h4 class="title">Build Brands</h4>
+                        <p>A business is only as good as its strategic process, and that’s what contributes to
+                            expectations..
                         </p>
                     </div>
                 </div>
@@ -267,57 +237,63 @@
             </div>
         </div>
         <div class="row no-gutters">
+            {% for gallery in gallery1 %}
             <div class="col-lg-6">
                 <div class="project-gallery-item">
-                    <img src="{% static 'web/img/project/02.jpg' %}" alt="">
+                    <img src="{{gallery.image.crop.570x573}}" alt="">
                     <div class="content">
                         <div class="caption">
-                            <h2 class="title">City billboard</h2>
-                            <p>Billboard Place</p>
+                            <h2 class="title">{{gallery.title}}</h2>
+                            
                         </div>
                     </div>
                 </div>
             </div>
+            {% endfor %}
             <div class="col-lg-6">
                 <div class="row no-gutters">
+                    {% for gallery in gallery2 %}
                     <div class="col-sm-6">
                         <div class="project-gallery-item">
-                            <img src="{% static 'web/img/project/03.jpg' %}" alt="">
+                            <img src="{{gallery.image.crop.285x287}}" alt="">
                             <div class="content">
                                 <div class="caption">
-                                    <h2 class="title">Art Gallery</h2>
-                                    <p>Digital Sign</p>
+                                    <h2 class="title">{{gallery.title}}</h2>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                    {% for gallery in gallery3 %}
                     <div class="col-sm-6">
                         <div class="project-gallery-item">
-                            <img src="{% static 'web/img/project/04.jpg' %}" alt="">
+                            <img src="{{gallery.image.crop.285x287}}" alt="">
                             <div class="content">
                                 <a href="#">
-                                    <h2 class="title">Food Print</h2>
-                                    <p>Mobile Billboard</p>
-                                </a>
+                                    <h2 class="title">{{gallery.title}}</h2>
+                                    </a>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
+                    {% for gallery in gallery4 %}
                     <div class="col-md-12">
                         <div class="project-gallery-item">
-                            <img src="{% static 'web/img/project/05.jpg' %}" alt="">
+                            <img src="{{gallery.image.crop.570x287}}" alt="">
                             <div class="content">
                                 <a href="#">
-                                    <h2 class="title">art Gallery</h2>
-                                    <p>Hoarding</p>
+                                    <h2 class="title">{{gallery.title}}</h2>
                                 </a>
                             </div>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>
     </div>
 </section>
+
 
 
 <!-- testimonial area start  -->
@@ -339,27 +315,32 @@
             <div class="col-lg-12">
                 <div class="testimonial-carousel-area margin-top-100">
                     <div class="testimonial-carousel">
+                        {% for testimonial in testimonial %}
                         <div class="single-testimonial-item">
                             <div class="content">
                                 <div class="content-wrapper">
-                                    <p class="description"> Great service and good understanding of clients requirements & Media Planning. I highly recommend outdooriyan Advertising.</p>
+                                    <p class="description">{{testimonial.decription}}</p>
                                 </div>
                                 <div class="author-details">
                                     <div class="thumb">
-                                        <img src="{% static 'web/img/testimonial/01.jpg' %}" alt="testimonial">
+                                        <img src="{{testimonial.image.crop.120x120}}" alt="testimonial">
                                     </div>
                                     <div class="author-meta">
-                                        <h4 class="title">Albert Haris
-                                        </h4>
-                                        <span class="designation">CEO, art media</span>
+                                        <h4 class="title">{{testimonial.name}}</h4>
+                                        <span class="designation">{{testimonial.designation}}</span>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                        {% endfor %}
+
+                        {% comment %}
                         <div class="single-testimonial-item">
                             <div class="content">
                                 <div class="content-wrapper">
-                                    <p class="description">I found myself working in a true partnership that results in an extra incredible experience of us I highly recommend outdooriyan Advertising.</p>
+                                    <p class="description">I found myself working in a true partnership that results in
+                                        an extra incredible experience of us I highly recommend outdooriyan Advertising.
+                                    </p>
                                 </div>
                                 <div class="author-details">
                                     <div class="thumb">
@@ -373,6 +354,9 @@
                                 </div>
                             </div>
                         </div>
+                        {% endcomment %}
+
+
                     </div>
                 </div>
             </div>
@@ -382,7 +366,8 @@
 <!-- testimonial area end -->
 
 <!-- Team Section -->
-<section class="creative-team bg-image padding-top-110 padding-bottom-55" style="background-image: url({% static 'web/img/bg/team-bg.jpg' %});">
+<section class="creative-team bg-image padding-top-110 padding-bottom-55"
+    style="background-image: url({% static 'web/img/bg/team-bg.jpg' %});">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-xl-8 col-lg-12">
@@ -467,58 +452,71 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne">
                                     <h5 class="mb-0">
-                                        <a href="#" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" class="collapsed">
+                                        <a href="#" data-toggle="collapse" data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne" class="collapsed">
                                             What Is agency ?
-                                    </a>
+                                        </a>
                                     </h5>
                                 </div>
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordion">
                                     <div class="card-body">
-                                        Start building your brand equity with the strategic one. Creative has been focusing on project management. your brand equity with the strategic one.
+                                        Start building your brand equity with the strategic one. Creative has been
+                                        focusing on project management. your brand equity with the strategic one.
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingTwo">
                                     <h5 class="mb-0">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
                                             How to purchase ?
 
-                                  </a>
+                                        </a>
                                     </h5>
                                 </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled.
+                                        If you are accused of committing a crime, you will need the very best criminal
+                                        defense attorneys in Fresno. We are especially skilled.
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingThree">
                                     <h5 class="mb-0">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
                                             Can i use for free ?
-                                  </a>
+                                        </a>
                                     </h5>
                                 </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled.
+                                        If you are accused of committing a crime, you will need the very best criminal
+                                        defense attorneys in Fresno. We are especially skilled.
                                     </div>
                                 </div>
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingFour">
                                     <h5 class="mb-0">
-                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                                        <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseThree">
                                             Dont be hesitate
-                                  </a>
+                                        </a>
                                     </h5>
                                 </div>
-                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                                <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                    data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal defense attorneys in Fresno. We are especially skilled.
+                                        If you are accused of committing a crime, you will need the very best criminal
+                                        defense attorneys in Fresno. We are especially skilled.
                                     </div>
                                 </div>
                             </div>
@@ -530,33 +528,59 @@
                 <div class="right-content-area">
                     <div class="request-page-form-wrap">
                         <h4 class="title">reach out via the from below</h4>
-                        <form action="https://freakytheme.com/html/outmedia/request.html" class="request-page-form" novalidate="novalidate">
+                        <form action="https://freakytheme.com/html/outmedia/request.html" class="request-page-form"
+                            novalidate="novalidate">
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="fname" placeholder="First Name" class="form-control" required="" aria-required="true">
+                                        <input type="text" name="name" placeholder="Name" class="form-control"
+                                            required aria-required="true">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="lname" placeholder="Last Name" class="form-control" required="" aria-required="true">
+                                        <input type="text" name="company" placeholder="Company" class="form-control"
+                                            required aria-required="true">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <input type="tel" name="phone" placeholder="Phone" class="form-control"
+                                            required aria-required="true">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="telephone" placeholder="Telephone" class="form-control" required="" aria-required="true">
+                                        <input type="email" name="email" placeholder="Email" class="form-control"
+                                            required="" aria-required="true">
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="phone" placeholder="Phone" class="form-control" required="" aria-required="true">
+                                        <input type="text" name="wesite" placeholder="Website" class="form-control"
+                                            required="" aria-required="true">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
+                                <div class="head-color">
+                                    <h4 style="color: white;">Let us know what you're interested in! Check all that apply
+                                    </h4>
+                                    <span>Area of Interest</span>
+                                    <div>
+                                        <input type="radio" id="html" name="fav" value="Outdoor_Advertising">
+                                        <label for="html">Outdoor Advertising
+                                        </label><br>
+                                        <input type="radio" id="css" name="fav" value="Agency_Partnership">
+                                        <label for="css">Agency Partnership</label><br>
+                        
+                                    </div>
+                                </div>
+                                <div class="col-md-12" style="padding-top: 15px;">
                                     <div class="form-group">
                                         <input type="submit" value="Submit Form" class="submit-btn">
                                     </div>
                                 </div>
+                                
                             </div>
                         </form>
                     </div>
@@ -583,12 +607,15 @@ Client Section
             <div class="col-md-10 offset-md-1">
                 <div class="client-area">
                     <div class="client-active-area">
+
+
+                        {% for client in client %}
                         <div class="single-brand">
-                            <a href="#"><img src="{% static 'web/img/client/01.png' %}" alt=""></a>
+                            <a href="#"><img src="{{client.image.crop.151x41}}" alt=""></a>
                         </div>
-                        <div class="single-brand">
-                            <a href="#"><img src="{% static 'web/img/client/02.png' %}" alt=""></a>
-                        </div>
+                        {% endfor %}
+
+                        {% comment %}
                         <div class="single-brand">
                             <a href="#"><img src="{% static 'web/img/client/03.png' %}" alt=""></a>
                         </div>
@@ -598,6 +625,8 @@ Client Section
                         <div class="single-brand">
                             <a href="#"><img src="{% static 'web/img/client/05.png' %}" alt=""></a>
                         </div>
+                        {% endcomment %}
+
                     </div>
                 </div>
             </div>
@@ -631,7 +660,8 @@ Client Section
                                     </div>
                                     <ul class="post-meta">
                                         <li>
-                                            <div class="cats"><i class="far fa-bookmark"></i><span>Uncategorized</span></div>
+                                            <div class="cats"><i class="far fa-bookmark"></i><span>Uncategorized</span>
+                                            </div>
                                         </li>
                                     </ul>
                                     <h4 class="title">Stay Well, Stay Healthy, Stay Home: Some Tips.</h4>
@@ -717,6 +747,4 @@ Client Section
 <!-- Contact area end -->
 
 
- {% endblock %}
-
-
+{% endblock %}
