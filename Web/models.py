@@ -1,6 +1,4 @@
-from distutils.command.upload import upload
-from tabnanny import verbose
-from turtle import title
+
 from django.db import models
 from versatileimagefield.fields import VersatileImageField,PPOIField
 from tinymce.models import HTMLField
@@ -8,7 +6,8 @@ from tinymce.models import HTMLField
 
 class Service(models.Model):
     title=models.CharField(max_length=225)
-    description = models.TextField()
+    summary=models.CharField(max_length=355)
+    description = HTMLField(blank=True, null=True)
     image = VersatileImageField(
         'Image',
         upload_to='services/',
@@ -47,10 +46,11 @@ class Gallery(models.Model):
 class Update(models.Model):
     title=models.CharField(max_length=225)
     summary=models.CharField(max_length=500)
+    date=models.DateField()
     image=VersatileImageField('Image',upload_to='updates/',ppoi_field='ppoi' )
     ppoi = PPOIField('Image PPOI')
-    date=models.DateField()
     content=HTMLField(blank=True, null=True)
+    slug=models.SlugField(unique=True)
 
     def __str__(self):
         return str(self.title)
@@ -85,10 +85,13 @@ class Contact(models.Model):
     phone=models.CharField(max_length=12)
     email=models.EmailField()
     website=models.CharField(max_length=225)
-    ad_type=models.CharField(max_length=128,choices=AD_CHOICES)
+    ad_type=models.CharField(max_length=128,choices=AD_CHOICES,default='outdoor_advertising')
 
     def __str__(self):
         return str(self.name)
+
+
+
 
 
 

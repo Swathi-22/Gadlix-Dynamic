@@ -25,14 +25,18 @@ class GalleryAdmin(admin.ModelAdmin):
 @admin.register(Update)
 class UpdateAdmin(admin.ModelAdmin):
     list_display = ( 'title', 'summary',)
+    prepopulated_fields = {'slug':('title',)}
+
 
 @admin.register(Client)
 class ClientAdmin(admin.ModelAdmin):
     list_display = ( 'title', 'image',)
 
+
 @admin.register(Testimonial)
 class TestimonialAdmin(admin.ModelAdmin):
     list_display = ( 'name', 'decription',)
+
 
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):

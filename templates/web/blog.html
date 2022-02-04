@@ -21,114 +21,29 @@
     <section class="our-service-area padding-bottom-120">
         <div class="container">
             <div class="row">
+
+                {% for update in updates %}
                 <div class="col-lg-4 col-md-6">
                     <div class="single-what-we-service-item margin-bottom-60">
                             <div class="single-what-img">
-                                <a href="{% url 'Web:blogDetails' %}">
-                                <img src="{% static 'web/img/service/01.jpg' %}" alt="">
+                                <a href="{% url 'Web:blogDetails' update.slug %}">
+                                <img src="{{update.image.crop.306x505}}" alt="">
                             </div>
                             <div class="content-wrapper">
-                                <div class="icon">
+                                <!-- <div class="icon">
                                     <i class="flaticon-2-billboard"></i>
-                                </div>
+                                </div> -->
                                 <div class="content">
-                                    <h4 class="title">Billboard</h4>
-                                    <p>Billboard advertising has grown as technology..</p>
+                                    <h4 class="title">{{update.title}}</h4>
+                                    <p>{{update.summary}}</p>
                                 </div>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-what-we-service-item margin-bottom-60">
-                        <a href="{% url 'Web:blogDetails' %}">
-                            <div class="single-what-img">
-                                <img src="{% static 'web/img/service/02.jpg' %}" alt="">
-                            </div>
-                            <div class="content-wrapper">
-                                <div class="icon">
-                                    <i class="flaticon-2-hot-dog"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title">Mobile Billboard</h4>
-                                    <p>Advertising on a truck is a unique strategy to helps..</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-what-we-service-item margin-bottom-60">
-                        <a href="{% url 'Web:blogDetails' %}">
-                            <div class="single-what-img">
-                                <img src="{% static 'web/img/service/03.jpg' %}" alt="">
-                            </div>
-                            <div class="content-wrapper">
-                                <div class="icon">
-                                    <i class="flaticon-2-signboard"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title">Digital Displays</h4>
-                                    <p>Treacherously far so late have immense condescending.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-what-we-service-item">
-                        <a href="{% url 'Web:blogDetails' %}">
-                            <div class="single-what-img">
-                                <img src="{% static 'web/img/service/04.jpg' %}" alt="">
-                            </div>
-                            <div class="content-wrapper">
-                                <div class="icon">
-                                    <i class="flaticon-2-building"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title">Hoarding</h4>
-                                    <p>Treacherously far so late have immense condescending.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-what-we-service-item">
-                        <a href="{% url 'Web:blogDetails' %}">
-                            <div class="single-what-img">
-                                <img src="{% static 'web/img/service/05.jpg' %}" alt="">
-                            </div>
-                            <div class="content-wrapper">
-                                <div class="icon">
-                                    <i class="flaticon-2-shop"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title">Bus Shelter</h4>
-                                    <p>Treacherously far so late have immense condescending.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-what-we-service-item">
-                        <a href="{% url 'Web:blogDetails' %}">
-                            <div class="single-what-img">
-                                <img src="{% static 'web/img/service/06.jpg' %}" alt="">
-                            </div>
-                            <div class="content-wrapper">
-                                <div class="icon">
-                                    <i class="flaticon-2-factory"></i>
-                                </div>
-                                <div class="content">
-                                    <h4 class="title">Metro Ads</h4>
-                                    <p>Treacherously far so late have immense condescending.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
+                {% endfor %}
+
+               
             </div>
         </div>
     </section>
@@ -218,6 +133,7 @@
         </div>
     </div>
 
+    {% comment %}
 
     <!-- testimonial area start  -->
     <section class="testimonial-area padding-top-120 padding-bottom-120">
@@ -394,6 +310,7 @@
             </div>
         </div>
     </div>
+    {% endcomment %}
     <!--=======================
     Client Section
     ========================-->
@@ -411,48 +328,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="client-area">
-                        <div class="client-active-area">
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/01.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/02.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/03.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/04.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/01.png' %}" alt=""></a>
-                            </div>
-                        </div>
+                        {% include 'web/partials/clients.html'  %}
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Contact area start  -->
-    <div class="contact-area padding-top-120 padding-bottom-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="section-title white">
-                        <h2 class="title">want to work with us ?</h2>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="contact-content">
-                        <h4 class="title">
-                            Contact us
-                        </h4>
-                        <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA info@yourdomain.com (+68) 120034509</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact area end -->
+    
     {% endblock %}

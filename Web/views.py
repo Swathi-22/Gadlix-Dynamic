@@ -1,8 +1,12 @@
-from django.shortcuts import render
+from turtle import update
+from urllib import response
+from django.shortcuts import get_object_or_404, render
+from django.http import JsonResponse
 from django.http import HttpResponse
 from .models import Service, Term,Gallery, Testimonial, Update,Client,Testimonial
+from .forms import ContactForm
 # Create your views here.
-
+import json
 
 def index(request):
     services = Service.objects.all()[:3]
@@ -10,9 +14,10 @@ def index(request):
     gallery2 = Gallery.objects.all().order_by('-id')[1:2]
     gallery3 = Gallery.objects.all().order_by('-id')[2:3]
     gallery4 = Gallery.objects.all().order_by('-id')[3:4]
-    client = Client.objects.all()
+    
     testimonial = Testimonial.objects.all()
-   
+    updates = Update.objects.all()
+    forms=ContactForm(request.POST or None)
 
     context={
         "is_index" : True,
@@ -21,16 +26,21 @@ def index(request):
         "gallery2":gallery2,
         "gallery3":gallery3,
         "gallery4":gallery4,
-        "client":client,
-        "testimonial":testimonial
+       
+        "testimonial":testimonial,
+        'updates':updates,
+        'forms':forms
+    
 
     }
     return render(request,'web/index.html',context)
 
 
 def about(request):
+    testimonial = Testimonial.objects.all()
     context={
         "is_about" : True,
+        'testimonial':testimonial
 
     }
     return render(request,'web/about.html',context)
@@ -84,11 +94,12 @@ def blog(request):
     return render(request,'web/blog.html',context)
 
 
-def blogDetails(request):
- 
+def blogDetails(request,slug):
+    update = get_object_or_404(Update,slug=slug)
+    updates=Update.objects.exclude(pk=update.pk)[:3]
     context={
-        
-
+        'update':update,
+        'updates':updates
     }
     return render(request,'web/blog-details.html',context)
 
@@ -98,3 +109,15 @@ def contact(request):
 
     }
     return render(request,'web/contact.html',context)
+
+def ajax(request):
+    forms=ContactForm(request.POST or None)
+    if request.method=='POST':
+        if forms.is_valid():
+            forms.save()
+            response_data = {
+                "status":"true",
+                "title":"Successfully Submitted",
+                "message":"Messages successfully updated"
+            }
+        return JsonResponse({'title':response_data})

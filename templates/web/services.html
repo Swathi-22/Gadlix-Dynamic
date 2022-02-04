@@ -34,7 +34,7 @@
                                 
                                 <div class="content">
                                     <h4 class="title">{{service.title}}</h4>
-                                    <p>{{service.description}}</p>
+                                    <p>{{service.summary}}</p>
                                 </div>
                             </div>
                         </a>
@@ -147,8 +147,9 @@
                             <i class="flaticon-3-layers"></i>
                         </div>
                         <div class="content">
-                            <h4 class="title">Multi Format Media</h4>
-                            <p>Start building your brand with the strategic one. industry expertise to solutions that .
+                            <h4 class="title">CHOOSE AGENCY</h4>
+                            <p>Choose the best agency to deliver the best advertisement solutions for your business.
+
                             </p>
                         </div>
                     </div>
@@ -159,8 +160,8 @@
                             <i class="flaticon-3-favorites"></i>
                         </div>
                         <div class="content">
-                            <h4 class="title">Smartly Planned</h4>
-                            <p>Start building your brand with the strategic one. industry expertise to solutions that .
+                            <h4 class="title">SMART PLANS</h4>
+                            <p>Plan your strategy and the type of advertisement you are going to execute.
                             </p>
                         </div>
                     </div>
@@ -171,8 +172,8 @@
                             <i class="flaticon-3-checked"></i>
                         </div>
                         <div class="content">
-                            <h4 class="title">Build Brands</h4>
-                            <p>Start building your brand with the strategic one. industry expertise to solutions that .
+                            <h4 class="title">BUILD BRANDS</h4>
+                            <p>Start building your brand with the strategic one. Best ads to boost business.
                             </p>
                         </div>
                     </div>
@@ -219,6 +220,7 @@
 
 
     <!-- testimonial area start  -->
+    {% comment %}
     <section class="testimonial-area padding-bottom-120 padding-top-120">
         <div class="container">
             <div class="row">
@@ -256,25 +258,7 @@
                             </div>
                             {% endfor %}
     
-                            {% comment %}
-                            <div class="single-testimonial-item">
-                                <div class="content">
-                                    <div class="content-wrapper">
-                                        <p class="description">I found myself working in a true partnership that results in an extra incredible experience of us I highly recommend outdooriyan Advertising.</p>
-                                    </div>
-                                    <div class="author-details">
-                                        <div class="thumb">
-                                            <img src="{% static 'web/img/testimonial/02.jpg' %}" alt="testimonial">
-                                        </div>
-                                        <div class="author-meta">
-                                            <h4 class="title">David Mcmilan
-                                            </h4>
-                                            <span class="designation">CEO, art media</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            {% endcomment %}
+                        
     
     
                         </div>
@@ -283,6 +267,7 @@
             </div>
         </div>
     </section>
+    {% endcomment %}
     <!-- testimonial area end -->
 
 
@@ -417,57 +402,12 @@
             </div>
             <div class="row">
                 <div class="col-md-10 offset-md-1">
-                    <div class="client-area">
-                        <div class="client-active-area">
-                            {% for client in client %}
-                            <div class="single-brand">
-                                <a href="#"><img src="{{client.image.crop.151x41}}" alt=""></a>
-                            </div>
-                            {% endfor%}
-    
-                           {% comment %}
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/02.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/03.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/04.png' %}" alt=""></a>
-                            </div>
-                            <div class="single-brand">
-                                <a href="#"><img src="{% static 'web/img/client/05.png' %}" alt=""></a>
-                            </div>
-                            {% endcomment %}
-    
-    
-                        </div>
-                    </div>
+                    {% include 'web/partials/clients.html'  %}
                 </div>
             </div>
         </div>
     </div>
-    <!-- Contact area start  -->
-    <div class="contact-area padding-top-120 padding-bottom-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="section-title white">
-                        <h2 class="title">want to work with us ?</h2>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="contact-content">
-                        <h4 class="title">
-                            Contact us
-                        </h4>
-                        <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA info@yourdomain.com (+68) 120034509</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact area end -->
+   
     {% endblock %}
 
  

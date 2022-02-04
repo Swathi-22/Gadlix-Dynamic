@@ -3,7 +3,7 @@
 {% block content %}
 
 
-<div class="">
+<div class="" id="home">
 
     <div class="header-area header-bg" style="background-position: center !important;">
         <div class="container">
@@ -14,7 +14,7 @@
                         <h1 class="title">Builds brand awareness immediatly
                         </h1>
                         <div class="btn-wrapper  desktop-left padding-top-30">
-                            <a href="#" class="boxed-btn">Our services</a>
+                            <a href="{% url 'Web:services' %}" class="boxed-btn">Our services</a>
                         </div>
                     </div>
                     <!-- //.header inner -->
@@ -25,17 +25,17 @@
 
 
 </div>
-<div class="counterup-area padding-bottom-80">
+<div class="counterup-area padding-bottom-80" >
     <div class="container">
         <div class="counter-area m-top bg-white padding-top-110 padding-bottom-105">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="section-inner">
                         <h2 class="section-inner-title">
-                            we create mass public's eye <span>attention</span>
+                            We Create <br> Next Level  <span>Advertisements </span>
                         </h2>
                         <div class="btn-wrapper">
-                            <a class="who-btn" href="#">who we are</a>
+                            <a class="who-btn" href="{% url 'Web:about' %}">who we are</a>
                         </div>
                     </div>
                 </div>
@@ -43,8 +43,7 @@
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="counter-content">
-                                <p>We are a value-driven organization. Our core values inspire us to push our boundaries
-                                    and set benchmarks for others</p>
+                                <p>We are a value-driven advertising agency in Kerala, India. Our core values inspire us to push our boundaries and set benchmarks for others</p>
                             </div>
                         </div>
                         <div class="col-md-4 col-sm-4 col-6">
@@ -79,14 +78,14 @@
 </div>
 
 <!-- Our Provide Area -->
-<section class="our-service-area padding-bottom-120">
+<section class="our-service-area padding-bottom-120" id="service" >
     <div class="bg-text">
         <span class="title">Service</span>
     </div>
-    <div class="container">
-        <div class="row justify-content-center">
+    <div class="container" >
+        <div class="row justify-content-center"  >
             <div class="col-lg-8">
-                <div class="section-title desktop-center padding-top-25 margin-bottom-55">
+                <div class="section-title desktop-center padding-top-25 margin-bottom-55" >
                     <p class="meta">what we do</p>
                     <h2 class="title">our SERVICES <span>.</span>
                     </h2>
@@ -97,14 +96,14 @@
             {% for service in services %}
             <div class="col-lg-4 col-md-6">
                 <div class="single-what-we-service-item margin-bottom-30">
-                    <a href="#">
+                    <a href="{% url 'Web:serviceDetails' service.id %}">
                         <div class="single-what-img">
                             <img src="{{service.image.crop.360x505}}" alt="">
                         </div>
                         <div class="content-wrapper">
                             <div class="content">
                                 <h4 class="title">{{service.title}}</h4>
-                                <p>{{service.description}}</p>
+                                <p>{{service.summary}}</p>
                             </div>
                         </div>
                     </a>
@@ -122,7 +121,7 @@
 </section>
 
 <!-- Our Advertising -->
-<div class="our-advertising-area bg-image padding-top-110 padding-bottom-110">
+<div class="our-advertising-area bg-image padding-top-110 padding-bottom-110" id="about">
     <div class="line-b"></div>
     <div class="container">
         <div class="row">
@@ -135,7 +134,7 @@
             </div>
             <div class="col-lg-6">
                 <div class="our-milestone">
-                    <h2 class="title"> Providing expert assistance with billboard advertising for 25 years.</h2>
+                    <h2 class="title"> Providing expert ASSISTANCE FOR BOTH OUTDOOR & INDOOR ADVERTISING.</h2>
                     <div class="milestone-plan">
                         <div class="progress-item-wrapper">
                             <div class="progress-item">
@@ -171,8 +170,7 @@
                         <div class="section-title padding-top-40 margin-bottom-55">
                             <h2 class="title">We help to create eye attention.
                             </h2>
-                            <p>We are a value-driven organization. Our core values inspire us to push our boundaries and
-                                set benchmarks for others.</p>
+                            <p>We create advertisements that catch people’s eye and attention. Build your brand with Gadlix..</p>
                             <div class="vdo-btn">
                                 <a class="mfp-iframe video-play-btn"
                                     href="https://www.youtube.com/watch?v=-ZwQtICNbRc"><span class="video-play"><i
@@ -190,9 +188,9 @@
                         <i class="flaticon-3-layers"></i>
                     </div>
                     <div class="content">
-                        <h4 class="title">Multi Format Media</h4>
-                        <p>Billboards capture repeat exposure business message more effectively than almost any other
-                            marketing channel..
+                        <h4 class="title">SMART PLANS</h4>
+                        <p>Plan your strategy and the type of advertisement you are going to execute.
+
                         </p>
                     </div>
                 </div>
@@ -203,8 +201,8 @@
                         <i class="flaticon-3-favorites"></i>
                     </div>
                     <div class="content">
-                        <h4 class="title">Smartly Planned</h4>
-                        <p>Start building your brand with the strategic one. industry expertise to solutions that .
+                        <h4 class="title">BUILD BRANDS</h4>
+                        <p>Start building your brand with the strategic one. Best ads to boost business.
                         </p>
                     </div>
                 </div>
@@ -215,9 +213,8 @@
                         <i class="flaticon-3-checked"></i>
                     </div>
                     <div class="content">
-                        <h4 class="title">Build Brands</h4>
-                        <p>A business is only as good as its strategic process, and that’s what contributes to
-                            expectations..
+                        <h4 class="title">GROW BUSINESS</h4>
+                        <p>Create the most attractive advertising design for boosting your business.
                         </p>
                     </div>
                 </div>
@@ -226,7 +223,7 @@
     </div>
 </section>
 <!-- Our Project Gallery -->
-<section class="our-project-area bg-image padding-top-110 padding-bottom-120">
+<section class="our-project-area bg-image padding-top-110 padding-bottom-120" id="gallery">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -334,27 +331,7 @@
                         </div>
                         {% endfor %}
 
-                        {% comment %}
-                        <div class="single-testimonial-item">
-                            <div class="content">
-                                <div class="content-wrapper">
-                                    <p class="description">I found myself working in a true partnership that results in
-                                        an extra incredible experience of us I highly recommend outdooriyan Advertising.
-                                    </p>
-                                </div>
-                                <div class="author-details">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/testimonial/02.jpg' %}" alt="testimonial">
-                                    </div>
-                                    <div class="author-meta">
-                                        <h4 class="title">David Mcmilan
-                                        </h4>
-                                        <span class="designation">CEO, art media</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        {% endcomment %}
+                       
 
 
                     </div>
@@ -438,7 +415,7 @@
 
 
 <!-- Request free quote -->
-<div class="request-area bg-image" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})">
+<div class="request-area bg-image" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})" id="contact">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-lg-6">
@@ -454,7 +431,7 @@
                                     <h5 class="mb-0">
                                         <a href="#" data-toggle="collapse" data-target="#collapseOne"
                                             aria-expanded="true" aria-controls="collapseOne" class="collapsed">
-                                            What Is agency ?
+                                            What is advertising?
                                         </a>
                                     </h5>
                                 </div>
@@ -462,8 +439,7 @@
                                 <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        Start building your brand equity with the strategic one. Creative has been
-                                        focusing on project management. your brand equity with the strategic one.
+                                        Advertising is the means of marketing communication with the customers about the product or brand.
                                     </div>
                                 </div>
                             </div>
@@ -472,7 +448,7 @@
                                     <h5 class="mb-0">
                                         <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseTwo"
                                             aria-expanded="false" aria-controls="collapseTwo">
-                                            How to purchase ?
+                                            What is an ad agency?
 
                                         </a>
                                     </h5>
@@ -480,8 +456,7 @@
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal
-                                        defense attorneys in Fresno. We are especially skilled.
+                                        An advertising agency is an agency that delivers exceptional services and assistance for your advertising necessities.
                                     </div>
                                 </div>
                             </div>
@@ -491,15 +466,14 @@
                                         <a href="#" class="collapsed" data-toggle="collapse"
                                             data-target="#collapseThree" aria-expanded="false"
                                             aria-controls="collapseThree">
-                                            Can i use for free ?
+                                            How to effectively do ads?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal
-                                        defense attorneys in Fresno. We are especially skilled.
+                                        Start building your brand equity with strategic and creative advertisements by considering your business and targeted audiences.
                                     </div>
                                 </div>
                             </div>
@@ -508,15 +482,14 @@
                                     <h5 class="mb-0">
                                         <a href="#" class="collapsed" data-toggle="collapse" data-target="#collapseFour"
                                             aria-expanded="false" aria-controls="collapseThree">
-                                            Dont be hesitate
+                                            Selecting perfect ad?
                                         </a>
                                     </h5>
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
                                     data-parent="#accordion">
                                     <div class="card-body">
-                                        If you are accused of committing a crime, you will need the very best criminal
-                                        defense attorneys in Fresno. We are especially skilled.
+                                        Understand your brand or business, the target audiences and the area of advertising. Select from the various ads that are best suitable for your needs.
                                     </div>
                                 </div>
                             </div>
@@ -528,38 +501,37 @@
                 <div class="right-content-area">
                     <div class="request-page-form-wrap">
                         <h4 class="title">reach out via the from below</h4>
-                        <form action="https://freakytheme.com/html/outmedia/request.html" class="request-page-form"
-                            novalidate="novalidate">
+                        <form  method="POST" class="request-page-form"novalidate="novalidate" id="form">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="name" placeholder="Name" class="form-control"
-                                            required aria-required="true">
+                                        {{forms.name}}
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="company" placeholder="Company" class="form-control"
-                                            required aria-required="true">
+                                        {{forms.company}}
+                                       
                                     </div>
                                 </div>
 
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="tel" name="phone" placeholder="Phone" class="form-control"
-                                            required aria-required="true">
+                                        {{forms.phone}}
+                                       
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="email" name="email" placeholder="Email" class="form-control"
-                                            required="" aria-required="true">
+                                        {{forms.email}}
+                                       
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <input type="text" name="wesite" placeholder="Website" class="form-control"
-                                            required="" aria-required="true">
+                                        {{forms.website}}
+                                        
                                     </div>
                                 </div>
                                 <div class="head-color">
@@ -567,14 +539,16 @@
                                     </h4>
                                     <span>Area of Interest</span>
                                     <div>
-                                        <input type="radio" id="html" name="fav" value="Outdoor_Advertising">
-                                        <label for="html">Outdoor Advertising
-                                        </label><br>
-                                        <input type="radio" id="css" name="fav" value="Agency_Partnership">
-                                        <label for="css">Agency Partnership</label><br>
+                                        {{forms.ad_type}}
+                                        
+                                        <br>
+                                       
+                                       
                         
                                     </div>
                                 </div>
+
+                        
                                 <div class="col-md-12" style="padding-top: 15px;">
                                     <div class="form-group">
                                         <input type="submit" value="Submit Form" class="submit-btn">
@@ -605,36 +579,13 @@ Client Section
         </div>
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <div class="client-area">
-                    <div class="client-active-area">
-
-
-                        {% for client in client %}
-                        <div class="single-brand">
-                            <a href="#"><img src="{{client.image.crop.151x41}}" alt=""></a>
-                        </div>
-                        {% endfor %}
-
-                        {% comment %}
-                        <div class="single-brand">
-                            <a href="#"><img src="{% static 'web/img/client/03.png' %}" alt=""></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="#"><img src="{% static 'web/img/client/04.png' %}" alt=""></a>
-                        </div>
-                        <div class="single-brand">
-                            <a href="#"><img src="{% static 'web/img/client/05.png' %}" alt=""></a>
-                        </div>
-                        {% endcomment %}
-
-                    </div>
-                </div>
+                {% include 'web/partials/clients.html'  %}
             </div>
         </div>
     </div>
 </div>
 <!-- blog area start  -->
-<section class="blog-area padding-top-120 padding-bottom-120">
+<section class="blog-area padding-top-120 padding-bottom-120" id="updates">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-lg-8">
@@ -648,73 +599,25 @@ Client Section
             <div class="col-lg-12">
                 <div class="blog-grid-carosel-wrapper">
                     <div class="blog-grid-carousel">
+                        {% for update in updates %}
                         <div class="single-blog-grid-01">
                             <div class="single-blog-grid-thumb">
-                                <img src="{% static 'web/img/blog/01.jpg' %}" alt="">
+                                <img src="{{update.image.crop.700x802}}" alt="">
                             </div>
-                            <a href="#">
+                            <a href="{% url 'Web:blogDetails' update.slug %}">
                                 <div class="content">
                                     <div class="post-date">
-                                        <h2 class="date">23</h2>
-                                        <span>Sept</span>
+                                        <h2 class="date">{{update.date|date:"d"}}</h2>
+                                        <span>{{update.date|date:"M"}}</span>
                                     </div>
-                                    <ul class="post-meta">
-                                        <li>
-                                            <div class="cats"><i class="far fa-bookmark"></i><span>Uncategorized</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                    <h4 class="title">Stay Well, Stay Healthy, Stay Home: Some Tips.</h4>
+                                    <h4 class="title">{{update.title}}</h4>
                                     <div class="blog-bottom">
-                                        <span class="line-btn">Read More</span>
+                                        <a href="{% url 'Web:blogDetails' update.slug %}"><span class="line-btn">Read More</span></a>
                                     </div>
                                 </div>
                             </a>
                         </div>
-                        <div class="single-blog-grid-01">
-                            <div class="single-blog-grid-thumb">
-                                <img src="{% static 'web/img/blog/02.jpg' %}" alt="">
-                            </div>
-                            <a href="#">
-                                <div class="content">
-                                    <div class="post-date">
-                                        <div class="date">23</div>
-                                        <span>Sept</span>
-                                    </div>
-                                    <ul class="post-meta">
-                                        <li>
-                                            <div class="cats"><i class="far fa-bookmark"></i>Technology</div>
-                                        </li>
-                                    </ul>
-                                    <h4 class="title">Manufacturing industry became a key sector.</h4>
-                                    <div class="blog-bottom">
-                                        <span class="line-btn">Read More</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="single-blog-grid-01">
-                            <div class="single-blog-grid-thumb">
-                                <img src="{% static 'web/img/blog/03.jpg' %}" alt="">
-                            </div>
-                            <a href="#">
-                                <div class="content">
-                                    <div class="post-date">
-                                        <div class="date">23</div>
-                                        <span>Sept</span>
-                                    </div>
-                                    <ul class="post-meta">
-                                        <li>
-                                            <div class="cats"><i class="far fa-bookmark"></i>Inspiration</div>
-                                        </li>
-                                    </ul>
-                                    <h4 class="title">Be Well: A Few Tips to Brighten your Day.</h4>
-                                    <div class="blog-bottom">
-                                        <span class="line-btn">Read More</span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
@@ -723,28 +626,13 @@ Client Section
 </section>
 <!-- blog area end -->
 <!-- Contact area start  -->
-<div class="contact-area padding-top-120 padding-bottom-120">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="section-title white">
-                    <h2 class="title">want to work with us ?</h2>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                <div class="contact-content">
-                    <h4 class="title">
-                        Contact us
-                    </h4>
-                    <p>MA Arcade, Near Calicut Airport, Kerala, India
-                        info@gadlix.com
-                        +91 96053 64611</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 <!-- Contact area end -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+{% endblock %}
+
+{% block javascript %}
 
 
 {% endblock %}

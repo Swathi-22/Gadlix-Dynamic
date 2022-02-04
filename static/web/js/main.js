@@ -1,29 +1,29 @@
 ;
-(function($) {
+(function ($) {
     "use strict";
 
-    $(document).ready(function() {
+    $(document).ready(function () {
 
         /**-----------------------------
          *  Navbar fix
          * ---------------------------*/
-        $(document).on('click', '.navbar-area .navbar-nav li.menu-item-has-children>a', function(e) {
+        $(document).on('click', '.navbar-area .navbar-nav li.menu-item-has-children>a', function (e) {
             e.preventDefault();
         })
 
         // Mobile Menu
-        $(window).resize(function() {
+        $(window).resize(function () {
             var click = false;
             var $hasMenu = $('.menu-item-has-children');
             if (window.innerWidth < 991) {
-               $($hasMenu).on('click', function(e) {
-                var current=$(this).find(".sub-menu").first();
-                current.toggleClass('active');
-                 e.stopPropagation();
+                $($hasMenu).on('click', function (e) {
+                    var current = $(this).find(".sub-menu").first();
+                    current.toggleClass('active');
+                    e.stopPropagation();
 
                 });
-               $('.menu-item-has-children > a').on('click', function(e) {
-                    if( !$(this).is('.clicked') ) {
+                $('.menu-item-has-children > a').on('click', function (e) {
+                    if (!$(this).is('.clicked')) {
                         e.preventDefault();
                         $(this).addClass('clicked');
                     }
@@ -49,7 +49,7 @@
         /*------------------
             back to top
         ------------------*/
-        $(document).on('click', '.back-to-top', function() {
+        $(document).on('click', '.back-to-top', function () {
             $("html,body").animate({
                 scrollTop: 0
             }, 2000);
@@ -65,7 +65,7 @@
         /*---------------------------
                     Mobile Cross Menu
         -----------------------------*/
-        $(document).on('click', '.cross-menu', function(e) {
+        $(document).on('click', '.cross-menu', function (e) {
             e.preventDefault();
             $(this).toggleClass("change");
         })
@@ -76,21 +76,21 @@
         ---------------------------------*/
         var $caseStudyThreeContainer = $('.case-studies-masonry');
         if ($caseStudyThreeContainer.length > 0) {
-            $('.case-studies-masonry').imagesLoaded(function() {
+            $('.case-studies-masonry').imagesLoaded(function () {
                 var caseMasonry = $caseStudyThreeContainer.isotope({
                     itemSelector: '.masonry-item', // use a separate class for itemSelector, other than .col-
                     masonry: {
                         gutter: 0
                     }
                 });
-                $(document).on('click', '.case-studies-menu li', function() {
+                $(document).on('click', '.case-studies-menu li', function () {
                     var filterValue = $(this).attr('data-filter');
                     caseMasonry.isotope({
                         filter: filterValue
                     });
                 });
             });
-            $(document).on('click', '.case-studies-menu li', function() {
+            $(document).on('click', '.case-studies-menu li', function () {
                 $(this).siblings().removeClass('active');
                 $(this).addClass('active');
             });
@@ -100,21 +100,21 @@
         ---------------------------------*/
         var $caseContainer = $('.recent-case-filter-02');
         if ($caseContainer.length > 0) {
-            $('.recent-case-filter-02').imagesLoaded(function() {
+            $('.recent-case-filter-02').imagesLoaded(function () {
                 var festivarMasonry = $caseContainer.isotope({
                     itemSelector: '.case-masonry', // use a separate class for itemSelector, other than .col-
                     masonry: {
                         gutter: 0
                     }
                 });
-                $(document).on('click', '.recent-case-filter-menu li', function() {
+                $(document).on('click', '.recent-case-filter-menu li', function () {
                     var filterValue = $(this).attr('data-filter');
                     festivarMasonry.isotope({
                         filter: filterValue
                     });
                 });
             });
-            $(document).on('click', '.recent-case-filter-menu li', function() {
+            $(document).on('click', '.recent-case-filter-menu li', function () {
                 $(this).siblings().removeClass('active');
                 $(this).addClass('active');
             });
@@ -230,44 +230,44 @@
         }
         // Clinet - active
         $('.client-active-area').owlCarousel({
-                loop: true,
-                items: 5,
-                nav: true,
-                margin: 30,
-                dots: false,
-                navText: ['<span data-icon="&#x23;"></span>', '<span data-icon="&#x24;"></span>'],
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    600: {
-                        items: 3
-                    },
-                    992: {
-                        items: 4
-                    },
-                    1200: {
-                        items: 5
-                    }
+            loop: true,
+            items: 5,
+            nav: true,
+            margin: 30,
+            dots: false,
+            navText: ['<span data-icon="&#x23;"></span>', '<span data-icon="&#x24;"></span>'],
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                992: {
+                    items: 4
+                },
+                1200: {
+                    items: 5
                 }
-            })
-            /*----------------------
-            Search Popup
-        -----------------------*/
+            }
+        })
+        /*----------------------
+        Search Popup
+    -----------------------*/
         var bodyOvrelay = $('#body-overlay');
         var searchPopup = $('#search-popup');
 
-        $(document).on('click', '#body-overlay', function(e) {
+        $(document).on('click', '#body-overlay', function (e) {
             e.preventDefault();
             bodyOvrelay.removeClass('active');
             searchPopup.removeClass('active');
         });
-        $(document).on('click', '.border-none', function(e) {
+        $(document).on('click', '.border-none', function (e) {
             e.preventDefault();
             bodyOvrelay.removeClass('active');
             searchPopup.removeClass('active');
         });
-        $(document).on('click', '#search', function(e) {
+        $(document).on('click', '#search', function (e) {
             e.preventDefault();
             searchPopup.addClass('active');
             bodyOvrelay.addClass('active');
@@ -280,7 +280,7 @@
     //define variable for store last scrolltop
     var lastScrollTop = '';
 
-    $(window).on('scroll', function() {
+    $(window).on('scroll', function () {
 
         //back to top show/hide
         var ScrollTop = $('.back-to-top');
@@ -310,7 +310,7 @@
     });
 
 
-    $(window).on('load', function() {
+    $(window).on('load', function () {
 
         /*-----------------
             preloader
@@ -327,7 +327,7 @@
         /*---------------------
             Cancel Preloader
         ----------------------*/
-        $(document).on('click', '.cancel-preloader a', function(e) {
+        $(document).on('click', '.cancel-preloader a', function (e) {
             e.preventDefault();
             $("#preloader").fadeOut(2000);
         });
@@ -335,3 +335,25 @@
 
 
 })(jQuery);
+
+
+$('#form').submit(function(form_value){
+    var data=$(this).serializeArray();
+    $.ajax({
+        url:"http://127.0.0.1:8000/ajax/",
+        method:'POST',
+        data:data,
+        success: function(){  
+            swal("Successfully Submitted!", "Message successfully updated", "success")
+            $('#form').trigger("reset")
+        },
+        error: function() { 
+            swal("Error!", "Form validation error", "error") 
+        }       
+    })
+    return false
+      
+})
+
+
+

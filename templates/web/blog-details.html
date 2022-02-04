@@ -21,14 +21,14 @@
                 <div class="col-lg-9">
                     <div class="blog-item padding-bottom-55">
                         <div class="thumb">
-                            <img src="{% static 'web/img/blog-single/01.jpg' %}" alt="blog">
+                            <img src="{{update.image.crop.900x600}}" alt="blog">
                         </div>
                         <div class="row">
                             <div class="col-md-3">
                                 <div class="blog-author-item">
                                     <div class="post-time">
-                                        <h4 class="post-date">23</h4>
-                                        <span class="post-month">Sept</span>
+                                        <h4 class="post-date">{{update.date|date:"d"}}</h4>
+                                        <span class="post-month">{{update.date|date:"M"}}</span>
                                     </div>
                                     <div class="author-mate">
                                         <!-- <div class="thumb">
@@ -57,11 +57,9 @@
                                             </li> -->
                                         </ul>
                                     </div>
-                                    <h2 class="sub-title">Start building your brand equity with the strategic one. Creative has been focusing on project management. your brand equity with the strategic one. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil
-                                        expetendis in mei.
+                                    <h2 class="sub-title">{{update.summary}}
                                     </h2>
-                                    <p>Start building your brand equity with the strategic one. Creative has been focusing on project management. your brand equity with the strategic one. Alienum phaedrum torquatos nec eu, vis detraxit periculis ex, nihil
-                                        expetendis in mei.
+                                    <p>{{update.content|safe}}
                                     </p>
                                     <!-- <div class="blog-details-img padding-top-40">
                                         <img src="{% static 'web/img/blog-single/04.jpg' %}" alt="">
@@ -169,33 +167,17 @@
                         <div class="widget style-01 widget_recent_posts">
                             <h4 class="widget-title style-01">Recent Post</h4>
                             <ul class="recent_post_item">
+                                {% for update in updates %}
                                 <li class="single-recent-post-item">
                                     <div class="thumb">
-                                        <img src="{% static 'web/img/popular-post/01.jpg' %}" alt="recent post">
+                                        <img src="{{update.image.crop.60x60}}" alt="recent post">
                                     </div>
                                     <div class="content">
-                                        <h4 class="title"><a href="#">Inspiration you like to </a></h4>
-                                        <span class="time"><i class="far fa-clock"></i> 05 Oct 2020</span>
+                                        <h4 class="title"><a href="#">{{update.title}}</a></h4>
+                                        <span class="time"><i class="far fa-clock"></i> {{update.date}}</span>
                                     </div>
                                 </li>
-                                <li class="single-recent-post-item">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/popular-post/02.jpg' %}" alt="recent post">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title"><a href="#">Cupidatat officia deserunt</a></h4>
-                                        <span class="time"><i class="far fa-clock"></i>05 Oct 2020</span>
-                                    </div>
-                                </li>
-                                <li class="single-recent-post-item">
-                                    <div class="thumb">
-                                        <img src="{% static 'web/img/popular-post/03.jpg' %}" alt="recent post">
-                                    </div>
-                                    <div class="content">
-                                        <h4 class="title"><a href="#">Always find looking for. </a></h4>
-                                        <span class="time"><i class="far fa-clock"></i>05 Oct 2020</span>
-                                    </div>
-                                </li>
+                                {% endfor %}
                             </ul>
                         </div>
                         <!-- <div id="tag_cloud-2" class="widget style-01 widget_tag_cloud">
@@ -215,26 +197,6 @@
             </div>
         </div>
     </div>
-    <!-- Contact area start  -->
-    <div class="contact-area padding-top-120 padding-bottom-120">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <div class="section-title white">
-                        <h2 class="title">want to work with us ?</h2>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                    <div class="contact-content">
-                        <h4 class="title">
-                            Contact us
-                        </h4>
-                        <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA info@yourdomain.com (+68) 120034509</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact area end -->
+  
 
     {% endblock %}

@@ -8,13 +8,16 @@ from django.forms.widgets import SelectMultiple, TextInput, Textarea, EmailInput
 class ContactForm(forms.ModelForm):
     class Meta:
         model = Contact
-        field= '__all__'
+        fields= '__all__'
         widgets={
             'name':TextInput(attrs={'class':'required form-control','placeholder':"Name"}),
             'company':TextInput(attrs={'class':'required form-control','placeholder':"Company"}),
             'phone':TextInput(attrs={'class':'required form-control','placeholder':"Phone"}),
             'email':EmailInput(attrs={'class':'form-control','placeholder':"Email"}),
-            'wesite':TextInput(attrs={'class':'form-control','placeholder':"Website"}),
-            'ad_type':RadioSelect(attrs={'class':'form-control','placeholder':"Website"})
+            'website':TextInput(attrs={'class':'form-control','placeholder':"Website"}),
+            
+            'ad_type':RadioSelect(attrs={'id':"html", 'name':"fav" ,'value':"Outdoor_Advertising"}),
+            # 'ad_type':RadioSelect(attrs={'id':"css", 'name':"fav" ,'value':"Agency_Partnership"}),
+
 
         }
