@@ -294,8 +294,8 @@
 
 
 <!-- testimonial area start  -->
-<section class="testimonial-area padding-bottom-120">
-    <div class="container">
+<section class="testimonial-area padding-bottom-120" style="background-image: url({% static 'web/img/bg/team-bg.jpg' %});"> 
+    <div class="container" >
         <div class="row">
             <div class="col-xl-7 col-lg-7">
                 <div class="testimonial-top padding-bottom-50 padding-top-55">
@@ -303,7 +303,7 @@
                         <div class="icon">
                             <i class="flaticon-right-quote-1"></i>
                         </div>
-                        <h2 class="title">Clinets testimonial </h2>
+                        <h2 class="title" style="color: white;">Clinets testimonial </h2>
                     </div>
                 </div>
             </div>
@@ -316,15 +316,15 @@
                         <div class="single-testimonial-item">
                             <div class="content">
                                 <div class="content-wrapper">
-                                    <p class="description">{{testimonial.decription}}</p>
+                                    <p class="description" style="color: white;">{{testimonial.decription}}</p>
                                 </div>
                                 <div class="author-details">
                                     <div class="thumb">
                                         <img src="{{testimonial.image.crop.120x120}}" alt="testimonial">
                                     </div>
                                     <div class="author-meta">
-                                        <h4 class="title">{{testimonial.name}}</h4>
-                                        <span class="designation">{{testimonial.designation}}</span>
+                                        <h4 class="title" style="color: white;">{{testimonial.name}}</h4>
+                                        <span class="designation" style="color: white;">{{testimonial.designation}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -342,80 +342,10 @@
 </section>
 <!-- testimonial area end -->
 
-<!-- Team Section -->
-<section class="creative-team bg-image padding-top-110 padding-bottom-55"
-    style="background-image: url({% static 'web/img/bg/team-bg.jpg' %});">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-xl-8 col-lg-12">
-                <div class="section-title white desktop-center padding-top-25 margin-bottom-55">
-                    <p class="meta">meet our expert team </p>
-                    <h2 class="title">our team <span>.</span></h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-4  col-sm-6 padding-bottom-60">
-                <div class="team-section">
-                    <div class="team-img-cont">
-                        <img src="{% static 'web/img/team/01.jpg' %}" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="social-link style-03">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-square facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter-square twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-square g-plus"></i></a></li>
-                            </ul>
-                        </div>
-                        <h4 class="title">Johnny Jhon</h4>
-                        <span>Co-Founder</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4  col-sm-6 padding-bottom-60">
-                <div class="team-section">
-                    <div class="team-img-cont">
-                        <img src="{% static 'web/img/team/02.jpg' %}" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="social-link style-03">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-square facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter-square twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-square g-plus"></i></a></li>
-                            </ul>
-                        </div>
-                        <h4 class="title">Johnny Lione</h4>
-                        <span>Co-Founder</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4  col-sm-6 padding-bottom-60">
-                <div class="team-section">
-                    <div class="team-img-cont">
-                        <img src="{% static 'web/img/team/03.jpg' %}" alt="">
-                    </div>
-                    <div class="content">
-                        <div class="social-link style-03">
-                            <ul>
-                                <li><a href="#"><i class="fab fa-facebook-square facebook"></i></a></li>
-                                <li><a href="#"><i class="fab fa-twitter-square twitter"></i></a></li>
-                                <li><a href="#"><i class="fab fa-google-plus-square g-plus"></i></a></li>
-                            </ul>
-                        </div>
-                        <h4 class="title">Jhon Cena</h4>
-                        <span>Co-Founder</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <!-- Request free quote -->
-<div class="request-area bg-image" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})" id="contact">
+<div class="request-area bg-image pt-4" style="background-image: url({% static 'web/img/bg/bg-faq.jpg' %})" id="contact">
     <div class="container">
         <div class="row no-gutters">
             <div class="col-lg-6">
@@ -501,7 +431,7 @@
                 <div class="right-content-area">
                     <div class="request-page-form-wrap">
                         <h4 class="title">reach out via the from below</h4>
-                        <form  method="POST" class="request-page-form"novalidate="novalidate" id="form">
+                        <form  method="POST" class="request-page-form" novalidate="novalidate" id="form">
                             {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-12">

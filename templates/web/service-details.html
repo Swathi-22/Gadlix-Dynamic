@@ -12,12 +12,13 @@
                 <div class="col-lg-8">
                     <div class="breadcrumb-inner">
                         <span>What we provide for you</span>
-                        <h2 class="page-title">Offers a vast array of advertising.</h2>
+                        <h2 class="page-title">{{service.title}}</h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- we offer  -->
     <section class="service-title-area">
@@ -26,12 +27,12 @@
                 <div class="col-lg-6">
                     <div class="service-area">
                         <p class="meta">service single</p>
-                        <h4 class="title-md">{{service.title}}</h4>
+                        <p class="" style="font-weight: 900;color: black;">{{service.summary}}</p>
                     </div>
                 </div>
                 <div class="col-lg-6 p-0">
                     <div class="section-p padding-top-40">
-                        <p>{{service.description|safe}}</p>
+                        <p style="text-align: justify;">{{service.description}}</p>
                     </div>
                 </div>
             </div>
@@ -42,15 +43,8 @@
                             <h3 class="title-md-line">
                                 why choose us
                             </h3>
-                            <p>{{service.subdescription}}</p>
-                            <div class="servicee-area">
-                                <ul>
-                                    {% for term in terms %}
-                                    <li><a href="#"><i class="fas fa-check"></i>{{term.term}}</a></li>
-                                        {% endfor %}
-                                    
-                                </ul>
-                            </div>
+                            <p style="color: black !important;">{{service.content|safe}}</p>
+                           
                         </div>
                     </div>
                     <div class="col-lg-6">

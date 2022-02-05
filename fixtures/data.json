@@ -1,0 +1,2764 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2022-02-02T06:09:49.723Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Service object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2022-02-02T06:28:09.925Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Service object (1)",
+            "action_flag": 2,
+            "change_message": "[]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2022-02-02T06:30:02.151Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Service object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2022-02-02T06:30:34.468Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Service object (2)",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2022-02-02T06:42:32.901Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "1",
+            "object_repr": "Term object (1)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2022-02-02T06:42:38.690Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "Term object (2)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2022-02-02T06:42:43.299Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "3",
+            "object_repr": "Term object (3)",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2022-02-02T07:04:17.475Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Test Title",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Subtitle\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 9,
+        "fields": {
+            "action_time": "2022-02-02T07:08:01.704Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Test Title",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"name\": \"term\", \"object\": \"Term object (1)\", \"fields\": [\"Term\"]}}, {\"changed\": {\"name\": \"term\", \"object\": \"Term object (2)\", \"fields\": [\"Term\"]}}, {\"changed\": {\"name\": \"term\", \"object\": \"Term object (3)\", \"fields\": [\"Term\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 10,
+        "fields": {
+            "action_time": "2022-02-02T07:32:38.395Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Test Title",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 11,
+        "fields": {
+            "action_time": "2022-02-02T07:32:50.556Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "SECOND",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 12,
+        "fields": {
+            "action_time": "2022-02-03T04:13:14.884Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "58585",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 13,
+        "fields": {
+            "action_time": "2022-02-03T04:35:07.588Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "ohcNJ",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 14,
+        "fields": {
+            "action_time": "2022-02-03T06:11:56.905Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "zrhtu",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 15,
+        "fields": {
+            "action_time": "2022-02-03T06:13:44.101Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Sfdh",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 16,
+        "fields": {
+            "action_time": "2022-02-03T06:27:55.286Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "alan",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 17,
+        "fields": {
+            "action_time": "2022-02-03T06:35:22.542Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "2",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 18,
+        "fields": {
+            "action_time": "2022-02-03T07:07:18.795Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "SECOND",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 19,
+        "fields": {
+            "action_time": "2022-02-03T07:07:25.488Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Test Title",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 20,
+        "fields": {
+            "action_time": "2022-02-03T07:11:19.615Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TITLE DEMO 1",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (4)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (5)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (6)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 21,
+        "fields": {
+            "action_time": "2022-02-03T07:13:25.714Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "TITLE DEMO 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (7)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (8)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (9)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 22,
+        "fields": {
+            "action_time": "2022-02-03T07:14:57.257Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "TITLE DEMO 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (10)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (11)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (12)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 23,
+        "fields": {
+            "action_time": "2022-02-03T07:15:20.190Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "TITLE 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (13)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (14)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (15)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 24,
+        "fields": {
+            "action_time": "2022-02-03T07:15:32.805Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "6",
+            "object_repr": "TITLE 4",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 25,
+        "fields": {
+            "action_time": "2022-02-03T07:15:56.344Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "7",
+            "object_repr": "TITLE DEMO 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (16)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (17)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (18)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 26,
+        "fields": {
+            "action_time": "2022-02-03T07:16:21.863Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "8",
+            "object_repr": "TITLE DEMO 5",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (19)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (20)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (21)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 27,
+        "fields": {
+            "action_time": "2022-02-03T07:16:57.895Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "TITLE DEMO 6",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (22)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (23)\"}}, {\"added\": {\"name\": \"term\", \"object\": \"Term object (24)\"}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 28,
+        "fields": {
+            "action_time": "2022-02-03T07:17:58.873Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TITLE DEMO 1",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 29,
+        "fields": {
+            "action_time": "2022-02-03T07:18:10.982Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "TITLE DEMO 2",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 30,
+        "fields": {
+            "action_time": "2022-02-03T07:18:25.615Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "TITLE DEMO 3",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 31,
+        "fields": {
+            "action_time": "2022-02-03T07:18:35.998Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "7",
+            "object_repr": "TITLE DEMO 4",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 32,
+        "fields": {
+            "action_time": "2022-02-03T07:18:46.726Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "8",
+            "object_repr": "TITLE DEMO 5",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 33,
+        "fields": {
+            "action_time": "2022-02-03T07:18:55.407Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "TITLE DEMO 6",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Subdescription\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 34,
+        "fields": {
+            "action_time": "2022-02-03T07:21:24.577Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "1",
+            "object_repr": "58585",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 35,
+        "fields": {
+            "action_time": "2022-02-03T07:22:15.035Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "2",
+            "object_repr": "TITLE DEMO 1",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 36,
+        "fields": {
+            "action_time": "2022-02-03T07:22:29.788Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "3",
+            "object_repr": "TITLE DEMO 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 37,
+        "fields": {
+            "action_time": "2022-02-03T07:22:45.077Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "4",
+            "object_repr": "TITLE DEMO 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 38,
+        "fields": {
+            "action_time": "2022-02-03T07:22:59.318Z",
+            "user": 1,
+            "content_type": 9,
+            "object_id": "5",
+            "object_repr": "TITLE DEMO 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 39,
+        "fields": {
+            "action_time": "2022-02-03T07:42:13.014Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 40,
+        "fields": {
+            "action_time": "2022-02-03T07:43:21.686Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "NAME",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 41,
+        "fields": {
+            "action_time": "2022-02-03T07:43:37.437Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "NAME",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 42,
+        "fields": {
+            "action_time": "2022-02-03T07:43:50.558Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "NAME",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 43,
+        "fields": {
+            "action_time": "2022-02-03T07:44:16.844Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "NAME",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 44,
+        "fields": {
+            "action_time": "2022-02-03T07:44:27.692Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "NAME",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 45,
+        "fields": {
+            "action_time": "2022-02-03T07:45:00.909Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "zrhtu",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 46,
+        "fields": {
+            "action_time": "2022-02-03T07:45:22.571Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "2",
+            "object_repr": "TITLE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 47,
+        "fields": {
+            "action_time": "2022-02-03T07:45:34.066Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "3",
+            "object_repr": "TITLE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 48,
+        "fields": {
+            "action_time": "2022-02-03T07:45:43.067Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "4",
+            "object_repr": "TITLE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 49,
+        "fields": {
+            "action_time": "2022-02-03T07:45:52.395Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "5",
+            "object_repr": "TITLE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 50,
+        "fields": {
+            "action_time": "2022-02-03T07:46:00.620Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "6",
+            "object_repr": "TITLE",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 51,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.871Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "7",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 52,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.882Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "6",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 53,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.890Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "5",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 54,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.897Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "4",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 55,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.907Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "3",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 56,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.916Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "2",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 57,
+        "fields": {
+            "action_time": "2022-02-04T04:48:57.926Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "1",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 58,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.846Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "39",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 59,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.854Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "38",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 60,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.861Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "37",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 61,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.867Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "36",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 62,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.874Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "35",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 63,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.881Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "34",
+            "object_repr": "d",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 64,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.887Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "33",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 65,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.893Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "32",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 66,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.899Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "31",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 67,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.906Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "30",
+            "object_repr": "Sfdh",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 68,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.912Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "29",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 69,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.918Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "28",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 70,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.925Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "27",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 71,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.931Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "26",
+            "object_repr": "d",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 72,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.938Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "25",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 73,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.944Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "24",
+            "object_repr": "d",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 74,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.951Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "23",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 75,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.956Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "22",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 76,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.963Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "21",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 77,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.971Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "20",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 78,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.976Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "19",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 79,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.982Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "18",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 80,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.990Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "17",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 81,
+        "fields": {
+            "action_time": "2022-02-04T05:48:46.998Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "16",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 82,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.004Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "15",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 83,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.011Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "14",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 84,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.018Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "13",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 85,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.023Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "12",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 86,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.029Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "11",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 87,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.036Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "10",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 88,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.043Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "9",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 89,
+        "fields": {
+            "action_time": "2022-02-04T05:48:47.051Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "8",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 90,
+        "fields": {
+            "action_time": "2022-02-04T06:43:39.442Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "hello",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 91,
+        "fields": {
+            "action_time": "2022-02-04T07:06:09.623Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "2",
+            "object_repr": "hello",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 92,
+        "fields": {
+            "action_time": "2022-02-04T07:06:09.630Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "ohcNJ",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 93,
+        "fields": {
+            "action_time": "2022-02-04T07:07:02.606Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "TITLE 1",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 94,
+        "fields": {
+            "action_time": "2022-02-04T07:07:35.359Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "TITLE 2",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 95,
+        "fields": {
+            "action_time": "2022-02-04T07:10:54.540Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "TITLE 3",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 96,
+        "fields": {
+            "action_time": "2022-02-04T07:11:43.136Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "TITLE 4",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 97,
+        "fields": {
+            "action_time": "2022-02-04T10:12:25.027Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TAKE YOUR SMALL BIZ TO THE NEXT LEVEL. TAKE IT OUTDOORS.",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 98,
+        "fields": {
+            "action_time": "2022-02-04T10:19:00.491Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TAKE YOUR SMALL BIZ TO THE NEXT LEVEL. TAKE IT OUTDOORS.",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Summary\", \"Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 99,
+        "fields": {
+            "action_time": "2022-02-04T10:37:46.744Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TAKE YOUR SMALL BIZ TO THE NEXT LEVEL. TAKE IT OUTDOORS.",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 100,
+        "fields": {
+            "action_time": "2022-02-04T11:22:48.259Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "6",
+            "object_repr": "TITLE 4",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 101,
+        "fields": {
+            "action_time": "2022-02-04T11:22:48.266Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "5",
+            "object_repr": "TITLE 3",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 102,
+        "fields": {
+            "action_time": "2022-02-04T11:22:48.271Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "4",
+            "object_repr": "TITLE 2",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 103,
+        "fields": {
+            "action_time": "2022-02-04T11:22:48.278Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "3",
+            "object_repr": "TITLE 1",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 104,
+        "fields": {
+            "action_time": "2022-02-04T11:24:50.722Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "7",
+            "object_repr": "EFFECTIVELY CREATING OUTDOOR ADVERTISEMENTS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 105,
+        "fields": {
+            "action_time": "2022-02-04T11:26:55.431Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "8",
+            "object_repr": "ADVANTAGES OF VIDEO ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 106,
+        "fields": {
+            "action_time": "2022-02-04T11:28:55.849Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "9",
+            "object_repr": "ADVERTISING JOURNEY OF GADLIX",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 107,
+        "fields": {
+            "action_time": "2022-02-05T05:28:25.840Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TAKE YOUR SMALL BIZ TO THE NEXT LEVEL. TAKE IT OUTDOORS.",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 108,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.788Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "9",
+            "object_repr": "TITLE DEMO 6",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 109,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.796Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "8",
+            "object_repr": "TITLE DEMO 5",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 110,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.802Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "7",
+            "object_repr": "TITLE DEMO 4",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 111,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.809Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "5",
+            "object_repr": "TITLE DEMO 3",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 112,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.815Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "4",
+            "object_repr": "TITLE DEMO 2",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 113,
+        "fields": {
+            "action_time": "2022-02-05T05:32:17.821Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "3",
+            "object_repr": "TAKE YOUR SMALL BIZ TO THE NEXT LEVEL. TAKE IT OUTDOORS.",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 114,
+        "fields": {
+            "action_time": "2022-02-05T05:40:45.752Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "1. AIRPORT ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 115,
+        "fields": {
+            "action_time": "2022-02-05T05:41:30.982Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "10",
+            "object_repr": "AIRPORT ADVERTISING",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 116,
+        "fields": {
+            "action_time": "2022-02-05T05:44:30.791Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "11",
+            "object_repr": "BILLBOARD ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 117,
+        "fields": {
+            "action_time": "2022-02-05T05:51:31.221Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "12",
+            "object_repr": "BUS ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 118,
+        "fields": {
+            "action_time": "2022-02-05T05:54:20.272Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "RAIL & TRAIN PLATFORM ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 119,
+        "fields": {
+            "action_time": "2022-02-05T05:57:57.515Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "14",
+            "object_repr": "STREET FURNITURE ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 120,
+        "fields": {
+            "action_time": "2022-02-05T05:58:37.233Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "RAIL & TRAIN PLATFORM ADVERTISING",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 121,
+        "fields": {
+            "action_time": "2022-02-05T05:59:11.795Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "13",
+            "object_repr": "RAIL & TRAIN PLATFORM ADVERTISING",
+            "action_flag": 2,
+            "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 122,
+        "fields": {
+            "action_time": "2022-02-05T06:05:43.073Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "15",
+            "object_repr": "MALL ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 123,
+        "fields": {
+            "action_time": "2022-02-05T06:08:06.589Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "16",
+            "object_repr": "VIDEO WALL ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 124,
+        "fields": {
+            "action_time": "2022-02-05T06:09:17.947Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "17",
+            "object_repr": "THEATRE ADVERTISING",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 125,
+        "fields": {
+            "action_time": "2022-02-05T06:11:06.899Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "18",
+            "object_repr": "NAME BOARD",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 126,
+        "fields": {
+            "action_time": "2022-02-05T06:12:12.965Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "19",
+            "object_repr": "HOARDINGS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 127,
+        "fields": {
+            "action_time": "2022-02-05T06:30:57.454Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "7",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 128,
+        "fields": {
+            "action_time": "2022-02-05T06:30:57.460Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "6",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 129,
+        "fields": {
+            "action_time": "2022-02-05T06:30:57.467Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "5",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 130,
+        "fields": {
+            "action_time": "2022-02-05T06:30:57.475Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "4",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 131,
+        "fields": {
+            "action_time": "2022-02-05T06:30:57.481Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "3",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 132,
+        "fields": {
+            "action_time": "2022-02-05T06:32:28.466Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "8",
+            "object_repr": "THOMAS",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 133,
+        "fields": {
+            "action_time": "2022-02-05T06:33:37.734Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "9",
+            "object_repr": "JHON",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 134,
+        "fields": {
+            "action_time": "2022-02-05T06:34:21.696Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "10",
+            "object_repr": "ALVIN",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 135,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.167Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "48",
+            "object_repr": "JHON",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 136,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.174Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "47",
+            "object_repr": "THOMAS",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 137,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.181Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "46",
+            "object_repr": "THOMAS",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 138,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.189Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "45",
+            "object_repr": "JHON",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 139,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.195Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "44",
+            "object_repr": "JHON",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 140,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.201Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "43",
+            "object_repr": "THOMAS",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 141,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.209Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "42",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 142,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.215Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "41",
+            "object_repr": "alan",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 143,
+        "fields": {
+            "action_time": "2022-02-05T09:09:53.222Z",
+            "user": 1,
+            "content_type": 13,
+            "object_id": "40",
+            "object_repr": "NAME",
+            "action_flag": 3,
+            "change_message": ""
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add service",
+            "content_type": 7,
+            "codename": "add_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change service",
+            "content_type": 7,
+            "codename": "change_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete service",
+            "content_type": 7,
+            "codename": "delete_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view service",
+            "content_type": 7,
+            "codename": "view_service"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add term",
+            "content_type": 8,
+            "codename": "add_term"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change term",
+            "content_type": 8,
+            "codename": "change_term"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete term",
+            "content_type": 8,
+            "codename": "delete_term"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view term",
+            "content_type": 8,
+            "codename": "view_term"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add gallery",
+            "content_type": 9,
+            "codename": "add_gallery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change gallery",
+            "content_type": 9,
+            "codename": "change_gallery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete gallery",
+            "content_type": 9,
+            "codename": "delete_gallery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view gallery",
+            "content_type": 9,
+            "codename": "view_gallery"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add update",
+            "content_type": 10,
+            "codename": "add_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change update",
+            "content_type": 10,
+            "codename": "change_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete update",
+            "content_type": 10,
+            "codename": "delete_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view update",
+            "content_type": 10,
+            "codename": "view_update"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add client",
+            "content_type": 11,
+            "codename": "add_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change client",
+            "content_type": 11,
+            "codename": "change_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete client",
+            "content_type": 11,
+            "codename": "delete_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view client",
+            "content_type": 11,
+            "codename": "view_client"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add testimonial",
+            "content_type": 12,
+            "codename": "add_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change testimonial",
+            "content_type": 12,
+            "codename": "change_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete testimonial",
+            "content_type": 12,
+            "codename": "delete_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view testimonial",
+            "content_type": 12,
+            "codename": "view_testimonial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add contact",
+            "content_type": 13,
+            "codename": "add_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change contact",
+            "content_type": 13,
+            "codename": "change_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete contact",
+            "content_type": 13,
+            "codename": "delete_contact"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view contact",
+            "content_type": 13,
+            "codename": "view_contact"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$320000$JZ2GIAF6NmSH2fAII0QZQW$zhHl2meHhIeYuN5BQ7ODEisWYKSN5O/hO2CAAOyiVNg=",
+            "last_login": "2022-02-05T06:40:55.987Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2022-02-02T06:08:27.654Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "Web",
+            "model": "service"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "Web",
+            "model": "term"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "Web",
+            "model": "gallery"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "Web",
+            "model": "update"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "Web",
+            "model": "client"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "Web",
+            "model": "testimonial"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "Web",
+            "model": "contact"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "0alm67l1q8805nd2hy2xqyvfd7zgovd5",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlm2s86Hkj5nsNa7GxxAthQnFeLuJFIKaN_MvLcKuK0pbFWWMLO6Kqsuv1tEeko-AD8w34umktdljvpQ9EmrHgvL63a6fwcJa9prougB2Eg72aZpHLYEyOInO_herMXorAh00HtjiBChIxInsCssg1efL_cGOLA:1nFU2m:XqYSAiRZsXwn4Ij97lIfvhn17Pp5ZkdvsdLsB7yD6Mw",
+            "expire_date": "2022-02-17T04:48:28.902Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "4960z1da3rrtturzr9rapko89ezc276v",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlm2s86Hkj5nsNa7GxxAthQnFeLuJFIKaN_MvLcKuK0pbFWWMLO6Kqsuv1tEeko-AD8w34umktdljvpQ9EmrHgvL63a6fwcJa9prougB2Eg72aZpHLYEyOInO_herMXorAh00HtjiBChIxInsCssg1efL_cGOLA:1nFA7H:FtWcHiq0HMx9jEjSV-XeQs4L-xdoHMkssIBsLMvS9jk",
+            "expire_date": "2022-02-16T07:31:47.766Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "f7xen5llj3zy8l01nelwq6cptr511o6k",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlm2s86Hkj5nsNa7GxxAthQnFeLuJFIKaN_MvLcKuK0pbFWWMLO6Kqsuv1tEeko-AD8w34umktdljvpQ9EmrHgvL63a6fwcJa9prougB2Eg72aZpHLYEyOInO_herMXorAh00HtjiBChIxInsCssg1efL_cGOLA:1nFTyK:xdG0jZ1DIRqGY07wHg7U3v_qMvKK6SqKBdhHvMg3fxc",
+            "expire_date": "2022-02-17T04:43:52.498Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "rt2ie0g3kj248ulawc2hw9k320j5iir0",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlm2s86Hkj5nsNa7GxxAthQnFeLuJFIKaN_MvLcKuK0pbFWWMLO6Kqsuv1tEeko-AD8w34umktdljvpQ9EmrHgvL63a6fwcJa9prougB2Eg72aZpHLYEyOInO_herMXorAh00HtjiBChIxInsCssg1efL_cGOLA:1nGEkh:fqi9Xw8lS7FD1NznTDnBQgeeyFfvg7log4ZUd5XsULY",
+            "expire_date": "2022-02-19T06:40:55.993Z"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "zwetmcqeahx8nqozxj2e3nc30fz66cp4",
+        "fields": {
+            "session_data": ".eJxVjDsOwjAQBe_iGlm2s86Hkj5nsNa7GxxAthQnFeLuJFIKaN_MvLcKuK0pbFWWMLO6Kqsuv1tEeko-AD8w34umktdljvpQ9EmrHgvL63a6fwcJa9prougB2Eg72aZpHLYEyOInO_herMXorAh00HtjiBChIxInsCssg1efL_cGOLA:1nF8oz:_bpOpspFYLQMXPbQ1j5flHOKM5gSyhcmCVycCo_GJsU",
+            "expire_date": "2022-02-16T06:08:49.774Z"
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 10,
+        "fields": {
+            "title": "AIRPORT ADVERTISING",
+            "summary": "Airport advertising is created to boost your brand or company among passengers travelling for both business and pleasure at an airport",
+            "content": "<p>How We Perform</p>\r\n<p style=\"text-align: justify;\">DIGITAL NETWORK ADVERTISING<br />&nbsp; &nbsp; Advertisings within airports that are generally incorporated fully digital, high definition LCD screens. They lure the passengers by the attractions of the advertisement.</p>\r\n<p style=\"text-align: justify;\">DIORAMA ADVERTISING<br />&nbsp; &nbsp; These backlit displays are located throughout the terminals that are dominating key areas that have high passenger concentration like arrivals, departures, and baggage sections. &nbsp; &nbsp;</p>\r\n<p style=\"text-align: justify;\">WALL WRAP &amp; STATIC ADVERTISING<br />&nbsp; &nbsp;These are the large-format promotion statements that are digitally printed on a striking vinyl material that temporarily clings to walls, windows or even floors, delivering the illusion that they are part of the existing terminal structure.</p>\r\n<p><span style=\"text-align: justify;\">&nbsp; &nbsp;</span></p>",
+            "image": "services/01_fP21IvT.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Airport advertising is created to boost your brand or company among passengers travelling for both business and pleasure at an airport. We present solutions in the most significant markets by unrevealing possibilities in advertising."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 11,
+        "fields": {
+            "title": "BILLBOARD ADVERTISING",
+            "summary": "Billboard advertisements are located on key highways, junctions and traffic points in major cities.",
+            "content": "<p style=\"text-align: justify;\">WALLSCAPE ADVERTISING<br />&nbsp; &nbsp; Located on spectacular landmark locations in major cities. Wallscapes are decorated ads that are either painted or affixed directly to outer building surfaces.&nbsp;</p>\r\n<p style=\"text-align: justify;\">DIGITAL BILLBOARD ADVERTISING<br />&nbsp; &nbsp; Digital billboard advertising incorporates multiple styles of messaging, advanced graphics, animation and full-motion video that delivers maximum creative flexibility.</p>\r\n<p style=\"text-align: justify;\">MOBILE BILLBOARD ADVERTISING<br />&nbsp; &nbsp;Mobile billboard advertising presents the exceptional possibility of holding a billboard drive through any city or neighbourhood.</p>\r\n<p style=\"text-align: justify;\">BRIDGE TRESTLE ADVERTISING<br />&nbsp; &nbsp; Bridge Trestles are typically located at major crossroads, permitting additional viewing time while vehicles are stemmed at traffic lights or pedestrians on the street.&nbsp;</p>",
+            "image": "services/02_zc55Ulb.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Billboard advertisements are located on key highways, junctions and traffic points in major cities. Billboards are the enormous creative canvas that delivers outstanding visibility to vehicular traffic by offering an unparalleled large format of advertising. Gadlix strand on top of advertising agencies in Kerala in delivering the best billboard advertisements."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 12,
+        "fields": {
+            "title": "BUS ADVERTISING",
+            "summary": "Bus Advertising incorporates up-to-the-minute technology and unrivalled campaign flexibility.",
+            "content": "<p>BUS INTERIOR ADVERTISING<br />&nbsp; &nbsp; Catch the attention of a fully captive audience with resounding, attention-grabby messages. Interior bus advertising permits your message to resonate with bus travellers.</p>\r\n<p>BUS TAIL ADVERTISING<br />&nbsp; &nbsp; Tail and Fullback Bus Tail Displays are a colourful advertisement medium that attracts attention to your message for reaching both pedestrian and vehicular traffic.</p>\r\n<p>DOUBLE-DECKER BUS WRAP ADVERTISING<br />&nbsp; &nbsp; Bus full wraps incorporate the size of a billboard that penetrates the market, eye-level impact and high profile visibility.</p>",
+            "image": "services/03_VPiO1lS.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Bus Advertising incorporates up-to-the-minute technology and unrivalled campaign flexibility. Bus advertising media structures contain bus head, bus tail, and bus interior posters. This advertising earns the attention of active travellers on the bus and pedestrians on road. Book your bus advertising with Gadlix, the best advertising agency in Kerala to boost your business."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 13,
+        "fields": {
+            "title": "RAIL & TRAIN PLATFORM ADVERTISING",
+            "summary": "Rail platform advertising symbolises an immaculate method to position your business in front of the travellers on the train each and every day.",
+            "content": "<p>RAIL &amp; TRAIN INTERIOR ADVERTISING<br />&nbsp; &nbsp; Rail interior advertising presents an exceptional possibility to bring your announcement in front of some of the individuals.</p>\r\n<p>RAIL DIGITAL PLATFORM ADVERTISING<br />&nbsp; &nbsp; Rail digital platform advertising targets elevated traffic transportation hubs With its enduring digital credentials.</p>",
+            "image": "services/04_DgLeFNI.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Rail platform advertising symbolises an immaculate method to position your business in front of the travellers on the train each and every day. This media of advertising delivers a high-frequency range of very exclusive audiences. Gadlix is the top-notch advertising agency in Kerala in delivering quality rail & train platform advertising."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 14,
+        "fields": {
+            "title": "STREET FURNITURE ADVERTISING",
+            "summary": "Street Furniture can produce mass exposure and can be targeted to gain the attention of typical audiences in a specific geographic area.",
+            "content": "<p>BUS SHELTER ADVERTISING<br />&nbsp; &nbsp; Advertising your brand and services on bus shelters delivers your business with an excellent audience of probable buyers, extended-term recognition, primary brand awareness, and high profile exposure.</p>\r\n<p>NEWSSTAND ADVERTISING<br />&nbsp; &nbsp;These advertisement posters are enormous and favourably perceptible from multiple angles. This would be an excellent choice for bus shelter advertising.</p>",
+            "image": "services/05_Eq9NvjZ.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Street Furniture can produce mass exposure and can be targeted to gain the attention of typical audiences in a specific geographic area. These ads can be viewed by both pedestrians, motorists and vehicular traffic due to their catchy positioning along major roadways. As a leading advertising agency in Malappuram, Kerala, it is our duty to deliver the most quality street furniture advertisements."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 15,
+        "fields": {
+            "title": "MALL ADVERTISING",
+            "summary": "Mall advertising can effectively reach captive targeted audiences.",
+            "content": "<p>BACKLIT POSTER ADVERTISING<br />&nbsp; &nbsp; &nbsp; Backlit poster advertisements are static advertisement panels that make a bold announcement in prime locations in increased traffic passages and court areas.</p>\r\n<p>BANNER ADVERTISING<br />&nbsp; &nbsp; &nbsp; These advertisements consist of prominent placement and precise sightlines throughout prominent mall corridors to secure substantial visibility amongst a replete and preoccupied retail audience.</p>\r\n<p>EXPERIENTIAL ADVERTISING<br />&nbsp; &nbsp; &nbsp;Experimental advertisement can bring your brand directly to the targeted audience by allowing advertisers to make use of the rare possibility to boost their company.</p>\r\n<p>STANDEE ADVERTISING<br />&nbsp; &nbsp; Standee is freestanding double-sided advertising so that the advertising remains observable to customers approaching from various directions and can almost be placed anywhere inside the mall.</p>",
+            "image": "services/06_6wyf4Py.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Mall advertising can effectively reach captive targeted audiences. many consumers visit their favourite mall considerable duration per month and the appearance of your ads will boost your business possibilities. Get your brand to higher standards by advertising with the best advertising company in Kerala."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 16,
+        "fields": {
+            "title": "VIDEO WALL ADVERTISING",
+            "summary": "Video wall advertising is an effective form of advertisement that can be reached by a considerable amount of targeted audiences.",
+            "content": "<p>The major advantages of video advertisements are:-<br />Highly Targeted<br />High Dwell Time<br />Consumer Recognition</p>",
+            "image": "services/01_Idx1qW7.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Video wall advertising is an effective form of advertisement that can be reached by a considerable amount of targeted audiences. As this is a video-based advertisement people will get easily attracted toward your advertisement, hence your business can be boosted. Gadlix is the top advertising agency in Kerala in delivering top-notch video wall advertising."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 17,
+        "fields": {
+            "title": "THEATRE ADVERTISING",
+            "summary": "These advertisements are designed to perform in theatres for promoting your brand or business inside the theatre.",
+            "content": "",
+            "image": "services/02_8sDGQ6g.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "These advertisements are designed to perform in theatres for promoting your brand or business inside the theatre. The theatre advertising can be video advertisements you see on the big picture, standee advertisements, movie posters and inside shop banners and other related advertisements.\r\n People visit theatres to relax and pass their stressful hangovers. With the best and most catchy advertisement, you can achieve the attention of the public and thus you can elevate your business growth. As a leading advertising company in Kerala, we strive to deliver the most quality theatre advertisements to boost your brand."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 18,
+        "fields": {
+            "title": "NAME BOARD",
+            "summary": "Design the most attractive name boards for your company or business to catch the attention of the public.",
+            "content": "<p>The main advantages delivered to our customers from Gadlix are,<br />Unique designs<br />Attractive appearance<br />Budget-friendly<br />Long-lasting matrerials</p>",
+            "image": "services/03_biR7vQe.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Design the most attractive name boards for your company or business to catch the attention of the public. We create the most attractive and unique name boards for our customers to boost their business. Gadlix is the topmost advertising agency in delivering exceptional name boards."
+        }
+    },
+    {
+        "model": "Web.service",
+        "pk": 19,
+        "fields": {
+            "title": "HOARDINGS",
+            "summary": "Hoardings are large outdoor advertisement structure that is commonly placed in high-traffic areas.",
+            "content": "<p>We create hoardings to reach your brand or business to larger targeted audiences. We create the most unique and attractive hoardings to increase the visibility of the public. The perfect advertisement is made possible by picking the most crowded area of the city.</p>",
+            "image": "services/04_kxcllaE.jpg",
+            "ppoi": "0.5x0.5",
+            "description": "Hoardings are large outdoor advertisement structure that is commonly placed in high-traffic areas. These large advertisements provide visibility for both passing pedestrians and drivers. Brands use hoardings to boost their brands and to push for their latest products. As a leading outdoor advertising agency in Kerala, we strive to deliver the most quality hoardings for our customers"
+        }
+    },
+    {
+        "model": "Web.gallery",
+        "pk": 2,
+        "fields": {
+            "title": "TITLE DEMO 1",
+            "image": "gallery/02.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.gallery",
+        "pk": 3,
+        "fields": {
+            "title": "TITLE DEMO 2",
+            "image": "gallery/03.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.gallery",
+        "pk": 4,
+        "fields": {
+            "title": "TITLE DEMO 3",
+            "image": "gallery/04.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.gallery",
+        "pk": 5,
+        "fields": {
+            "title": "TITLE DEMO 4",
+            "image": "gallery/05.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.update",
+        "pk": 7,
+        "fields": {
+            "title": "EFFECTIVELY CREATING OUTDOOR ADVERTISEMENTS",
+            "summary": "Outdoor advertising is the most influential nondigital method for developing online activity",
+            "date": "2022-02-04",
+            "image": "updates/02_lO9t8aq.jpg",
+            "ppoi": "0.5x0.5",
+            "content": "<p style=\"text-align: justify;\">Outdoor advertising is the most influential nondigital method for developing online activity. Brands need to expand their presence outside to catch more targeted audiences. With an effective outdoor advertising strategy, the number of target audiences can be heightened. The more target audience there is there are better possibilities for boosting your brand. Choosing a proficient location is the major strategy in outdoor advertising. The location should be a more crowded area where more chances of people visiting are expected. Your brand or business can be boosted by choosing the proper location and attractive advertisement board that is positioned in a visible area. Top advertising can position your brand higher and more business achievements. Make effective outdoor advertising by making your campaign shareable, considering the location of objective, complete analysing and by keeping simplicity. The impact that your advertisement made on viewers will vary you out from the current competitors in the industry. If you are looking for the best ways to carry out outdoor advertising, then gadlix is the best choice for advertising agencies in Kerala.</p>",
+            "slug": "effectively-creating-outdoor-advertisements"
+        }
+    },
+    {
+        "model": "Web.update",
+        "pk": 8,
+        "fields": {
+            "title": "ADVANTAGES OF VIDEO ADVERTISING",
+            "summary": "Advertisings are now a major strategy for marketing your brand or business.",
+            "date": "2022-02-04",
+            "image": "updates/03_PZoNtvE.jpg",
+            "ppoi": "0.5x0.5",
+            "content": "<p style=\"text-align: justify;\">Advertisings are now a major strategy for marketing your brand or business. As the applications of advertisements raised the possibilities within it also elevated. The static poster advertisements are now upgraded to their maximum. Video advertising is one of the most viewed and user entertaining advertisements currently available. Motion pictures can make a positive impact on viewers. The quality and the presentation of a video advertisement should be of higher standards and user pleasing. Video advertisements can be created for whatever brand or business or service you possess. An outstanding video presentation and a perfect location of execution can boost your business. Maintaining an exceptional presence among the public is very much necessary to grow your business. Best advertising ideas will enhance your status and existence in the market.</p>",
+            "slug": "advantages-of-video-advertising"
+        }
+    },
+    {
+        "model": "Web.update",
+        "pk": 9,
+        "fields": {
+            "title": "ADVERTISING JOURNEY OF GADLIX",
+            "summary": "Communication is very much necessary to reach out to your brand or business to the public",
+            "date": "2022-02-04",
+            "image": "updates/04_6mzauXG.jpg",
+            "ppoi": "0.5x0.5",
+            "content": "<div class=\"messagesWrapper-RpOMA3 group-spacing-16\">\r\n<div class=\"scroller-kQBbkU auto-2K3UW5 scrollerBase-_bVAAt disableScrollAnchor-6TwzvM managedReactiveScroller-1lEEh3\" dir=\"ltr\" tabindex=\"-1\" role=\"group\" data-jump-section=\"global\">\r\n<div class=\"scrollerContent-2SW0kQ content-2a4AW9\">\r\n<ol class=\"scrollerInner-2PPAp2\" tabindex=\"0\" role=\"list\" aria-label=\"Messages in \" data-list-id=\"chat-messages\">\r\n<ol class=\"scrollerInner-2PPAp2\" tabindex=\"0\" role=\"list\" aria-label=\"Messages in \" data-list-id=\"chat-messages\">\r\n<li id=\"chat-messages-939118373277687828\" class=\"messageListItem-ZZ7v6g\" aria-setsize=\"-1\">\r\n<div class=\"message-2CShn3 cozyMessage-1DWF9U wrapper-30-Nkg cozy-VmLDNB zalgo-26OfGz\" tabindex=\"-1\" role=\"article\" data-list-item-id=\"chat-messages___chat-messages-939118373277687828\" aria-setsize=\"-1\" aria-roledescription=\"Message\" aria-labelledby=\"message-username-939117204501327922 uid_1 message-content-939118373277687828 uid_2 message-timestamp-939118373277687828\" aria-describedby=\"\">\r\n<div class=\"contents-2MsGLg\">\r\n<div id=\"message-content-939118373277687828\" class=\"markup-eYLPri messageContent-2t3eCI\">Communication is very much necessary to reach out to your brand or business to the public. Gadlix has been delivering exceptional services in advertising by building proper communication with the public. Gadlix is one of the top advertising agencies in Kerala, India. The company has successfully delivered excellent advertisement projects for companies and individuals all over Kerala. As a leading advertising company in Kerala, we always make sure to deliver works of higher standards and quality. The areas in which gadlix deliver advertisements are,</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Airport advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Billboard advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Bus advertising Rail &amp; train platform advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Street furniture advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Mall advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Video wall advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Theatre advertising</div>\r\n<div class=\"markup-eYLPri messageContent-2t3eCI\">Name board Hoardings</div>\r\n</div>\r\n<div class=\"buttonContainer-1502pf\">\r\n<div class=\"buttons-3dF5Kd container-2gUZhU\" aria-label=\"Message Actions\">\r\n<div class=\"wrapper-2vIMkT\">\r\n<div class=\"button-3bklZh\" tabindex=\"0\" role=\"button\" aria-label=\"Add Reaction\" aria-controls=\"popout_217\" aria-expanded=\"false\">&nbsp;</div>\r\n<div class=\"button-3bklZh\" tabindex=\"0\" role=\"button\" aria-label=\"Reply\">&nbsp;</div>\r\n<div class=\"button-3bklZh\" tabindex=\"0\" role=\"button\" aria-label=\"More\" aria-controls=\"popout_218\" aria-expanded=\"false\">&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</li>\r\n</ol>\r\n</ol>\r\n<div class=\"containerCompact-1Jto1O\">\r\n<div class=\"compactButton-3hG-bs\" tabindex=\"0\" role=\"button\" aria-label=\"Send a wave\">\r\n<div role=\"img\" aria-label=\"Sticker, Wave, Wumpus waves hello\">\r\n<div class=\"assetWrapper-2hzITV\">&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n<form class=\"form-3gdLxP\">\r\n<div class=\"channelTextArea-1FufC0 channelTextArea-1VQBuV\">\r\n<div class=\"scrollableContainer-15eg7h webkit-QgSAqd\">\r\n<div class=\"inner-NQg18Y sansAttachButton-1ERHue\">\r\n<div class=\"textArea-2CLwUE textAreaSlate-9-y-k2 slateContainer-3x9zil\">\r\n<div class=\"markup-eYLPri slateTextArea-27tjG0 fontSize16Padding-XoMpjI\" style=\"text-align: justify;\" role=\"textbox\" contenteditable=\"true\" spellcheck=\"true\" aria-haspopup=\"listbox\" aria-autocomplete=\"list\" aria-label=\"Message @LucAz\" aria-multiline=\"true\" data-can-focus=\"true\" data-slate-editor=\"true\" data-key=\"12\" data-gramm=\"false\">&nbsp;</div>\r\n</div>\r\n</div>\r\n</div>\r\n</div>\r\n</form>",
+            "slug": "advertising-journey-of-gadlix"
+        }
+    },
+    {
+        "model": "Web.client",
+        "pk": 2,
+        "fields": {
+            "title": "TITLE",
+            "image": "clients/01.png",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.client",
+        "pk": 3,
+        "fields": {
+            "title": "TITLE",
+            "image": "clients/02.png",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.client",
+        "pk": 4,
+        "fields": {
+            "title": "TITLE",
+            "image": "clients/03.png",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.client",
+        "pk": 5,
+        "fields": {
+            "title": "TITLE",
+            "image": "clients/04.png",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.client",
+        "pk": 6,
+        "fields": {
+            "title": "TITLE",
+            "image": "clients/05.png",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.testimonial",
+        "pk": 8,
+        "fields": {
+            "decription": "Gadlix is the best advertising company in Kerala and has the most innovative advertising concepts and ideas.",
+            "name": "THOMAS",
+            "designation": "Creative Designer",
+            "image": "testimonials/01_ZTXyTJu.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.testimonial",
+        "pk": 9,
+        "fields": {
+            "decription": "Working with Gadlix is the best choice we made.",
+            "name": "JHON",
+            "designation": "Creative Designer",
+            "image": "testimonials/02_djxktFD.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    },
+    {
+        "model": "Web.testimonial",
+        "pk": 10,
+        "fields": {
+            "decription": "They are the top advertising agency in Kerala.",
+            "name": "ALVIN",
+            "designation": "Creative Designer",
+            "image": "testimonials/01_EYWv45J.jpg",
+            "ppoi": "0.5x0.5"
+        }
+    }
+]

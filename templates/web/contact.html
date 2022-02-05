@@ -52,40 +52,53 @@
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col-lg-6">
                     <div class="contact-form">
-                        <form action="https://freakytheme.com/html/outmedia/request.html" class="contact-page-form" novalidate="novalidate">
+                        <form action="" class="contact-page-form" method="POST" novalidate="novalidate" id="form">
+                            {% csrf_token %}
                             <div class="row">
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" name="fname" placeholder="First Name" class="form-control" required="" aria-required="true">
+                                        {{forms.name}}                                   
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" name="lname" placeholder="Last Name" class="form-control" required="" aria-required="true">
+                                        {{forms.company}}
+                                        <!-- <input type="text" name="lname" placeholder="Company" class="form-control" required="" aria-required="true"> -->
+                                    </div>
+                                </div>
+                                
+                                <div class="col-md-6 col-sm-6">
+                                    <div class="form-group">
+                                        {{forms.phone}}
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-sm-6">
                                     <div class="form-group">
-                                        <input type="text" name="telephone" placeholder="Telephone" class="form-control" required="" aria-required="true">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-sm-6">
-                                    <div class="form-group">
-                                        <input type="text" name="phone" placeholder="Phone" class="form-control" required="" aria-required="true">
+                                        {{forms.email}}
                                     </div>
                                 </div>
                                 <div class="col-md-12">
                                     <div class="form-group">
-                                        <textarea name="msg" id="msg" cols="1" rows="4" placeholder="Send Message"></textarea>
+                                        {{forms.website}}
+                                    </div>
+                                <div>
+                                    <h6>Let us know what you're interested in! Check all that apply</h6>
+                                    <span>Area of Interest </span><br>
+                                    {{forms.ad_type}}
+                                </div>
+
+                                </div>
+                                <div class="col-md-12" style="padding-top: 15px;">
+                                    <div class="form-group btn-wrapper">
+                                        <input type="submit" value="Submit Message" class="boxed-btn" style="border: none;">
                                     </div>
                                 </div>
-                                <div class="col-md-12">
-                                    <div class="btn-wrapper">
-                                        <a href="#" class="boxed-btn"><span>Submit Message</span></a>
-                                    </div>
-                                </div>
+
+                        
                             </div>
                         </form>
                     </div>
@@ -106,6 +119,6 @@
         </div>
     </div>
 
-    
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 
     {% endblock %}

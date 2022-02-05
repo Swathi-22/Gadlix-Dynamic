@@ -7,27 +7,19 @@ from tinymce.models import HTMLField
 class Service(models.Model):
     title=models.CharField(max_length=225)
     summary=models.CharField(max_length=355)
-    description = HTMLField(blank=True, null=True)
-    image = VersatileImageField(
-        'Image',
-        upload_to='services/',
-        ppoi_field='ppoi'
-    )
-    ppoi = PPOIField(
-        'Image PPOI'
-    )
-
-    subtitle=models.CharField(max_length=225)
-    subdescription = models.TextField()
+    content = HTMLField(blank=True, null=True)
+    image = VersatileImageField('Image',upload_to='services/',ppoi_field='ppoi')
+    ppoi = PPOIField('Image PPOI')
+    description=models.TextField()
     
     def __str__(self):
         return self.title
 
 
     
-class Term(models.Model):
-    service=models.ForeignKey(Service,on_delete=models.CASCADE)
-    term=models.CharField(max_length=225)
+# class Term(models.Model):
+#     service=models.ForeignKey(Service,on_delete=models.CASCADE)
+#     term=HTMLField(blank=True,null=True)
 
 
 class Gallery(models.Model):
@@ -79,13 +71,13 @@ class Testimonial(models.Model):
 
 
 class Contact(models.Model):
-    AD_CHOICES=(('outdoor_advertising','outdoor_advertising'),('agent_partnership','agent_partnership',))
+    AD_CHOICES=(('outdoor_advertising','Outdoor Advertising'),('agent_partnership','Agent Partnership',))
     name=models.CharField(max_length=225)
     company=models.CharField(max_length=225)
     phone=models.CharField(max_length=12)
     email=models.EmailField()
     website=models.CharField(max_length=225)
-    ad_type=models.CharField(max_length=128,choices=AD_CHOICES,default='outdoor_advertising')
+    ad_type=models.CharField(max_length=128,choices=AD_CHOICES,default='Outdoor Advertising')
 
     def __str__(self):
         return str(self.name)

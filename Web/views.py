@@ -1,9 +1,8 @@
-from turtle import update
-from urllib import response
+
 from django.shortcuts import get_object_or_404, render
 from django.http import JsonResponse
 from django.http import HttpResponse
-from .models import Service, Term,Gallery, Testimonial, Update,Client,Testimonial
+from .models import Service, Gallery, Testimonial, Update,Client,Testimonial
 from .forms import ContactForm
 # Create your views here.
 import json
@@ -62,12 +61,12 @@ def services(request):
 
 def serviceDetails(request,id):
     service=Service.objects.get(id=id)
-    terms=Term.objects.filter(service=service)
+    # terms=Term.objects.filter(service=service)
     testimonial = Testimonial.objects.all()
     client = Client.objects.all()
     context={
         "service":service,
-        "terms":terms,
+        # "terms":terms,
         "testimonial":testimonial,
         "client":client,
     }
@@ -105,7 +104,9 @@ def blogDetails(request,slug):
 
 
 def contact(request):
+    forms=ContactForm(request.POST or None)
     context={
+        'forms':forms
 
     }
     return render(request,'web/contact.html',context)
